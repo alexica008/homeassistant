@@ -1,0 +1,889 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "trace.saved_traces",
+    "data": {
+        "automation.1660899896927": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "1e636dbb268308ca96586b8472283c83",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-24T12:30:52.184378+00:00",
+                        "finish": "2022-08-24T12:30:52.571015+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1660899896927",
+                    "trigger": null,
+                    "trace": {
+                        "trigger": [
+                            {
+                                "path": "trigger",
+                                "timestamp": "2022-08-24T12:30:52.184433+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.notification",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-22T05:08:54.163396+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1660899896927",
+                                            "friendly_name": "Notificare curent"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954852+00:00",
+                                        "last_updated": "2022-08-24T12:30:44.954852+00:00",
+                                        "context": {
+                                            "id": "01GB7XAS6TBSGAPBFABJ77JX49",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "platform": null
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-24T12:30:52.185876+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GB7XB08R1537MZQDSKMBJZNP",
+                                        "parent_id": "01GB7XB08QNQ1YJ6ASAGE1GFAE",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "notify",
+                                        "service": "mobile_app_gm1913",
+                                        "service_data": {
+                                            "message": "A s\u0103rit siguran\u021ba! ",
+                                            "title": "Alerta! "
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1660899896927",
+                        "alias": "Notificare curent",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "c1e138a6c7f9d71491910081604431f7",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "device_offline",
+                                "subtype": "device_offline"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "notify.mobile_app_gm1913",
+                                "data": {
+                                    "message": "A s\u0103rit siguran\u021ba! ",
+                                    "title": "Alerta! "
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GB7XB08R1537MZQDSKMBJZNP",
+                        "parent_id": "01GB7XB08QNQ1YJ6ASAGE1GFAE",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "1e636dbb268308ca96586b8472283c83",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-24T12:30:52.184378+00:00",
+                        "finish": "2022-08-24T12:30:52.571015+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1660899896927",
+                    "trigger": null
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "52e02c9e00b2e4dcb2d394614d0efec1",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-27T10:30:50.352174+00:00",
+                        "finish": "2022-08-27T10:30:50.801920+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1660899896927",
+                    "trigger": "event 'zha_event'",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-08-27T10:30:50.352251+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.notification",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-24T12:30:52.184518+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1660899896927",
+                                            "friendly_name": "Notificare curent"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954852+00:00",
+                                        "last_updated": "2022-08-24T12:30:52.570257+00:00",
+                                        "context": {
+                                            "id": "01GB7XB08R1537MZQDSKMBJZNP",
+                                            "parent_id": "01GB7XB08QNQ1YJ6ASAGE1GFAE",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "device",
+                                        "event": {
+                                            "event_type": "zha_event",
+                                            "data": {
+                                                "device_ieee": "00:12:4b:00:23:ae:32:5a",
+                                                "unique_id": "00:12:4b:00:23:ae:32:5a",
+                                                "device_id": "c1e138a6c7f9d71491910081604431f7",
+                                                "device_event_type": "device_offline"
+                                            },
+                                            "origin": "LOCAL",
+                                            "time_fired": "2022-08-27T10:30:50.351509+00:00",
+                                            "context": {
+                                                "id": "01GBFDNC7FQJNWDB558CC51TE3",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "description": "event 'zha_event'"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-27T10:30:50.353759+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GBFDNC7GW1F7DEYMM9TYQF30",
+                                        "parent_id": "01GBFDNC7FQJNWDB558CC51TE3",
+                                        "user_id": null
+                                    }
+                                },
+                                "result": {
+                                    "params": {
+                                        "domain": "notify",
+                                        "service": "mobile_app_gm1913",
+                                        "service_data": {
+                                            "message": "A s\u0103rit siguran\u021ba! ",
+                                            "title": "Alerta! "
+                                        },
+                                        "target": {}
+                                    },
+                                    "running_script": false,
+                                    "limit": 10
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1660899896927",
+                        "alias": "Notificare curent",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "c1e138a6c7f9d71491910081604431f7",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "device_offline",
+                                "subtype": "device_offline"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "service": "notify.mobile_app_gm1913",
+                                "data": {
+                                    "message": "A s\u0103rit siguran\u021ba! ",
+                                    "title": "Alerta! "
+                                }
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GBFDNC7GW1F7DEYMM9TYQF30",
+                        "parent_id": "01GBFDNC7FQJNWDB558CC51TE3",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "52e02c9e00b2e4dcb2d394614d0efec1",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-27T10:30:50.352174+00:00",
+                        "finish": "2022-08-27T10:30:50.801920+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1660899896927",
+                    "trigger": "event 'zha_event'"
+                }
+            }
+        ],
+        "automation.1659882517835": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "77e6c438ce43b2e0b8cef077294de75b",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-26T20:23:46.054130+00:00",
+                        "finish": "2022-08-26T20:23:46.154875+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882517835",
+                    "trigger": "event 'zha_event'",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-08-26T20:23:46.054174+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.bedroom_lights_on",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-21T17:58:51.214543+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1659882517835",
+                                            "friendly_name": "Bedroom lights on"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954699+00:00",
+                                        "last_updated": "2022-08-24T12:30:44.954699+00:00",
+                                        "context": {
+                                            "id": "01GB7XAS6T2Y5F3X7MSGKKNKF6",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "device",
+                                        "event": {
+                                            "event_type": "zha_event",
+                                            "data": {
+                                                "device_ieee": "00:3c:84:ff:fe:25:a2:a2",
+                                                "unique_id": "00:3c:84:ff:fe:25:a2:a2:1:0x0006",
+                                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                                "endpoint_id": 1,
+                                                "cluster_id": 6,
+                                                "command": "on",
+                                                "args": [],
+                                                "params": {}
+                                            },
+                                            "origin": "LOCAL",
+                                            "time_fired": "2022-08-26T20:23:46.053664+00:00",
+                                            "context": {
+                                                "id": "01GBDX6B45WSPYX4HFGYZH6HTS",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "description": "event 'zha_event'"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-26T20:23:46.055155+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GBDX6B468CXWTY23XENB3RRC",
+                                        "parent_id": "01GBDX6B45WSPYX4HFGYZH6HTS",
+                                        "user_id": null
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1659882517835",
+                        "alias": "Bedroom lights on",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "remote_button_short_press",
+                                "subtype": "turn_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "type": "turn_on",
+                                "device_id": "3850c012080766d0ac62943f0f80f846",
+                                "entity_id": "light.light_bedroom_on_off",
+                                "domain": "light"
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GBDX6B468CXWTY23XENB3RRC",
+                        "parent_id": "01GBDX6B45WSPYX4HFGYZH6HTS",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "77e6c438ce43b2e0b8cef077294de75b",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-26T20:23:46.054130+00:00",
+                        "finish": "2022-08-26T20:23:46.154875+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882517835",
+                    "trigger": "event 'zha_event'"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "c34340f0a4f5d21ac78e6a06d109b6a7",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-26T20:23:48.062402+00:00",
+                        "finish": "2022-08-26T20:23:48.158888+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882517835",
+                    "trigger": "event 'zha_event'",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-08-26T20:23:48.062459+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.bedroom_lights_on",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-26T20:23:46.054273+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1659882517835",
+                                            "friendly_name": "Bedroom lights on"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954699+00:00",
+                                        "last_updated": "2022-08-26T20:23:46.154755+00:00",
+                                        "context": {
+                                            "id": "01GBDX6B468CXWTY23XENB3RRC",
+                                            "parent_id": "01GBDX6B45WSPYX4HFGYZH6HTS",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "device",
+                                        "event": {
+                                            "event_type": "zha_event",
+                                            "data": {
+                                                "device_ieee": "00:3c:84:ff:fe:25:a2:a2",
+                                                "unique_id": "00:3c:84:ff:fe:25:a2:a2:1:0x0006",
+                                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                                "endpoint_id": 1,
+                                                "cluster_id": 6,
+                                                "command": "on",
+                                                "args": [],
+                                                "params": {}
+                                            },
+                                            "origin": "LOCAL",
+                                            "time_fired": "2022-08-26T20:23:48.061992+00:00",
+                                            "context": {
+                                                "id": "01GBDX6D2XDS7F4DBJGT7EHZJ1",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "description": "event 'zha_event'"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-26T20:23:48.062728+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GBDX6D2YVJEJQF7G2HXS01SY",
+                                        "parent_id": "01GBDX6D2XDS7F4DBJGT7EHZJ1",
+                                        "user_id": null
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1659882517835",
+                        "alias": "Bedroom lights on",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "remote_button_short_press",
+                                "subtype": "turn_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "type": "turn_on",
+                                "device_id": "3850c012080766d0ac62943f0f80f846",
+                                "entity_id": "light.light_bedroom_on_off",
+                                "domain": "light"
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GBDX6D2YVJEJQF7G2HXS01SY",
+                        "parent_id": "01GBDX6D2XDS7F4DBJGT7EHZJ1",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "c34340f0a4f5d21ac78e6a06d109b6a7",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-26T20:23:48.062402+00:00",
+                        "finish": "2022-08-26T20:23:48.158888+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882517835",
+                    "trigger": "event 'zha_event'"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "f2ecff51f79e20674322f90a3e158f97",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-27T14:36:01.522392+00:00",
+                        "finish": "2022-08-27T14:36:01.676439+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882517835",
+                    "trigger": "event 'zha_event'",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-08-27T14:36:01.522435+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.bedroom_lights_on",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-26T20:23:48.062558+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1659882517835",
+                                            "friendly_name": "Bedroom lights on"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954699+00:00",
+                                        "last_updated": "2022-08-26T20:23:48.158757+00:00",
+                                        "context": {
+                                            "id": "01GBDX6D2YVJEJQF7G2HXS01SY",
+                                            "parent_id": "01GBDX6D2XDS7F4DBJGT7EHZJ1",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "device",
+                                        "event": {
+                                            "event_type": "zha_event",
+                                            "data": {
+                                                "device_ieee": "00:3c:84:ff:fe:25:a2:a2",
+                                                "unique_id": "00:3c:84:ff:fe:25:a2:a2:1:0x0006",
+                                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                                "endpoint_id": 1,
+                                                "cluster_id": 6,
+                                                "command": "on",
+                                                "args": [],
+                                                "params": {}
+                                            },
+                                            "origin": "LOCAL",
+                                            "time_fired": "2022-08-27T14:36:01.521258+00:00",
+                                            "context": {
+                                                "id": "01GBFVPAKH8J2704B1RPQGP7DV",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "description": "event 'zha_event'"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-27T14:36:01.523597+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GBFVPAKJEA8TGMNCHVXX9JZG",
+                                        "parent_id": "01GBFVPAKH8J2704B1RPQGP7DV",
+                                        "user_id": null
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1659882517835",
+                        "alias": "Bedroom lights on",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "remote_button_short_press",
+                                "subtype": "turn_on"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "type": "turn_on",
+                                "device_id": "3850c012080766d0ac62943f0f80f846",
+                                "entity_id": "light.light_bedroom_on_off",
+                                "domain": "light"
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GBFVPAKJEA8TGMNCHVXX9JZG",
+                        "parent_id": "01GBFVPAKH8J2704B1RPQGP7DV",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "f2ecff51f79e20674322f90a3e158f97",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-27T14:36:01.522392+00:00",
+                        "finish": "2022-08-27T14:36:01.676439+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882517835",
+                    "trigger": "event 'zha_event'"
+                }
+            }
+        ],
+        "automation.1659882398477": [
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "22ca952a2e7d2bf1386391d8294cc070",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-26T20:23:46.954797+00:00",
+                        "finish": "2022-08-26T20:23:47.047684+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882398477",
+                    "trigger": "event 'zha_event'",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-08-26T20:23:46.954860+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.lights_off",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-21T17:58:50.552376+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1659882398477",
+                                            "friendly_name": "Bedroom lights off"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954536+00:00",
+                                        "last_updated": "2022-08-24T12:30:44.954536+00:00",
+                                        "context": {
+                                            "id": "01GB7XAS6T5VV98QK9PPNMYJH5",
+                                            "parent_id": null,
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "device",
+                                        "event": {
+                                            "event_type": "zha_event",
+                                            "data": {
+                                                "device_ieee": "00:3c:84:ff:fe:25:a2:a2",
+                                                "unique_id": "00:3c:84:ff:fe:25:a2:a2:1:0x0006",
+                                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                                "endpoint_id": 1,
+                                                "cluster_id": 6,
+                                                "command": "off",
+                                                "args": [],
+                                                "params": {}
+                                            },
+                                            "origin": "LOCAL",
+                                            "time_fired": "2022-08-26T20:23:46.954378+00:00",
+                                            "context": {
+                                                "id": "01GBDX6C0AW859NWTH6QTBQXGN",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "description": "event 'zha_event'"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-26T20:23:46.957072+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GBDX6C0A32CANTBQ3368V1QF",
+                                        "parent_id": "01GBDX6C0AW859NWTH6QTBQXGN",
+                                        "user_id": null
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1659882398477",
+                        "alias": "Bedroom lights off",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "remote_button_short_press",
+                                "subtype": "turn_off"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "type": "turn_off",
+                                "device_id": "3850c012080766d0ac62943f0f80f846",
+                                "entity_id": "light.light_bedroom_on_off",
+                                "domain": "light"
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GBDX6C0A32CANTBQ3368V1QF",
+                        "parent_id": "01GBDX6C0AW859NWTH6QTBQXGN",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "22ca952a2e7d2bf1386391d8294cc070",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-26T20:23:46.954797+00:00",
+                        "finish": "2022-08-26T20:23:47.047684+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882398477",
+                    "trigger": "event 'zha_event'"
+                }
+            },
+            {
+                "extended_dict": {
+                    "last_step": "action/0",
+                    "run_id": "bc07229e801aac564e72fc2c10fae01f",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-27T14:36:02.452428+00:00",
+                        "finish": "2022-08-27T14:36:02.630126+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882398477",
+                    "trigger": "event 'zha_event'",
+                    "trace": {
+                        "trigger/0": [
+                            {
+                                "path": "trigger/0",
+                                "timestamp": "2022-08-27T14:36:02.452464+00:00",
+                                "changed_variables": {
+                                    "this": {
+                                        "entity_id": "automation.lights_off",
+                                        "state": "on",
+                                        "attributes": {
+                                            "last_triggered": "2022-08-26T20:23:46.954960+00:00",
+                                            "mode": "single",
+                                            "current": 0,
+                                            "id": "1659882398477",
+                                            "friendly_name": "Bedroom lights off"
+                                        },
+                                        "last_changed": "2022-08-24T12:30:44.954536+00:00",
+                                        "last_updated": "2022-08-26T20:23:47.047483+00:00",
+                                        "context": {
+                                            "id": "01GBDX6C0A32CANTBQ3368V1QF",
+                                            "parent_id": "01GBDX6C0AW859NWTH6QTBQXGN",
+                                            "user_id": null
+                                        }
+                                    },
+                                    "trigger": {
+                                        "id": "0",
+                                        "idx": "0",
+                                        "platform": "device",
+                                        "event": {
+                                            "event_type": "zha_event",
+                                            "data": {
+                                                "device_ieee": "00:3c:84:ff:fe:25:a2:a2",
+                                                "unique_id": "00:3c:84:ff:fe:25:a2:a2:1:0x0006",
+                                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                                "endpoint_id": 1,
+                                                "cluster_id": 6,
+                                                "command": "off",
+                                                "args": [],
+                                                "params": {}
+                                            },
+                                            "origin": "LOCAL",
+                                            "time_fired": "2022-08-27T14:36:02.451588+00:00",
+                                            "context": {
+                                                "id": "01GBFVPBGK2RAFWE7D46CYN6J9",
+                                                "parent_id": null,
+                                                "user_id": null
+                                            }
+                                        },
+                                        "description": "event 'zha_event'"
+                                    }
+                                }
+                            }
+                        ],
+                        "action/0": [
+                            {
+                                "path": "action/0",
+                                "timestamp": "2022-08-27T14:36:02.452985+00:00",
+                                "changed_variables": {
+                                    "context": {
+                                        "id": "01GBFVPBGMJ3MQASW1T15BJK9S",
+                                        "parent_id": "01GBFVPBGK2RAFWE7D46CYN6J9",
+                                        "user_id": null
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "config": {
+                        "id": "1659882398477",
+                        "alias": "Bedroom lights off",
+                        "description": "",
+                        "trigger": [
+                            {
+                                "device_id": "7a06364fe6e3caa7156d9154d050af0c",
+                                "domain": "zha",
+                                "platform": "device",
+                                "type": "remote_button_short_press",
+                                "subtype": "turn_off"
+                            }
+                        ],
+                        "condition": [],
+                        "action": [
+                            {
+                                "type": "turn_off",
+                                "device_id": "3850c012080766d0ac62943f0f80f846",
+                                "entity_id": "light.light_bedroom_on_off",
+                                "domain": "light"
+                            }
+                        ],
+                        "mode": "single"
+                    },
+                    "blueprint_inputs": null,
+                    "context": {
+                        "id": "01GBFVPBGMJ3MQASW1T15BJK9S",
+                        "parent_id": "01GBFVPBGK2RAFWE7D46CYN6J9",
+                        "user_id": null
+                    }
+                },
+                "short_dict": {
+                    "last_step": "action/0",
+                    "run_id": "bc07229e801aac564e72fc2c10fae01f",
+                    "state": "stopped",
+                    "script_execution": "finished",
+                    "timestamp": {
+                        "start": "2022-08-27T14:36:02.452428+00:00",
+                        "finish": "2022-08-27T14:36:02.630126+00:00"
+                    },
+                    "domain": "automation",
+                    "item_id": "1659882398477",
+                    "trigger": "event 'zha_event'"
+                }
+            }
+        ]
+    }
+}

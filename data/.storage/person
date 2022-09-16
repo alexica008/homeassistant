@@ -1,0 +1,27 @@
+{
+    "version": 2,
+    "minor_version": 1,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "alexica",
+                "user_id": "17489d9724ce4fdf83bd967cdcfe83c1",
+                "device_trackers": [
+                    "device_tracker.op7",
+                    "device_tracker.catalins_iphone"
+                ],
+                "id": "alexica"
+            },
+            {
+                "name": "ceci",
+                "device_trackers": [
+                    "device_tracker.caracuda_s_iphone"
+                ],
+                "user_id": "ee449a92dd6446fc88d963a15d3dd4a9",
+                "picture": null,
+                "id": "ceci"
+            }
+        ]
+    }
+}

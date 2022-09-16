@@ -1,0 +1,738 @@
+2022-08-28 11:17:56 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:17:56 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration frigate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:17:56 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:17:56 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration asusrouter which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:18:40 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/tasmota/__init__.py", line 88, in start_platforms
+    await discovery.async_start(
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/tasmota/discovery.py", line 199, in async_start
+    await tasmota_discovery.start_discovery(
+  File "/usr/lib/python3.9/site-packages/hatasmota/discovery.py", line 184, in start_discovery
+    await self._subscribe_discovery_topic(device_discovered, sensors_discovered)
+  File "/usr/lib/python3.9/site-packages/hatasmota/discovery.py", line 273, in _subscribe_discovery_topic
+    self._sub_state = await self._mqtt_client.subscribe(self._sub_state, topics)
+  File "/usr/lib/python3.9/site-packages/hatasmota/mqtt.py", line 106, in subscribe
+    return await self._subscribe(sub_state, topics)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/tasmota/__init__.py", line 62, in _subscribe_topics
+    await async_subscribe_topics(hass, sub_state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-08-28 11:18:45 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/dhcp/__init__.py", line 103, in _initialize
+    await active_watcher.async_start()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/dhcp/__init__.py", line 398, in async_start
+    await self.hass.async_add_executor_job(self._start)
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/dhcp/__init__.py", line 404, in _start
+    from scapy import (  # pylint: disable=import-outside-toplevel,unused-import  # noqa: F401
+  File "/usr/lib/python3.9/site-packages/scapy/arch/__init__.py", line 135, in <module>
+    _set_conf_sockets()  # Apply config
+  File "/usr/lib/python3.9/site-packages/scapy/config.py", line 618, in _set_conf_sockets
+    conf.ifaces.reload()
+  File "/usr/lib/python3.9/site-packages/scapy/interfaces.py", line 238, in reload
+    self._reload_provs()
+  File "/usr/lib/python3.9/site-packages/scapy/interfaces.py", line 234, in _reload_provs
+    self._load(prov.reload(), prov)
+  File "/usr/lib/python3.9/site-packages/scapy/interfaces.py", line 53, in reload
+    return self.load()
+  File "/usr/lib/python3.9/site-packages/scapy/arch/linux.py", line 417, in load
+    ifflags = struct.unpack("16xH14x", get_if(i, SIOCGIFFLAGS))[0]
+  File "/usr/lib/python3.9/site-packages/scapy/arch/common.py", line 65, in get_if
+    return ioctl(sck, cmd, struct.pack("16s16x", iff.encode("utf8")))
+OSError: [Errno 19] No such device
+2022-08-28 11:19:51 WARNING (MainThread) [homeassistant.components.asuswrt.config_flow] This device does not provide a valid Unique ID. Configuration of multiple instance will not be possible
+2022-08-28 11:26:58 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 11:26:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-28 13:27:29 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 13:27:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-28 16:01:38 ERROR (MainThread) [frontend.js.latest.202206010] :0:0 ResizeObserver loop completed with undelivered notifications.
+2022-08-28 16:02:36 ERROR (MainThread) [frontend.js.latest.202206010] :0:0 ResizeObserver loop completed with undelivered notifications.
+2022-08-28 20:04:09 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 20:04:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-28 23:50:33 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 23:50:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-29 00:39:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-29 00:41:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 00:41:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-29 01:51:24 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 01:51:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-29 07:05:47 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 07:05:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-29 09:06:28 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 09:06:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-29 10:38:55 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-29 10:40:45 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 10:40:45 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-29 12:49:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-29 16:06:57 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 16:06:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-29 16:07:07 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 17:11:28 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 17:11:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-29 19:05:40 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-29 19:51:29 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-29 19:51:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-29 23:03:05 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:f0b99fa6-49e9-4825-8320-5b5e29a5d86d, reason: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-08-29 23:03:20 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:d14183ae-2df4-48a1-b6ef-cdc25e3363a6, reason: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-08-29 23:03:32 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:c2719130-70f4-4aaa-aeb2-b0c11786aebc, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-30 00:04:35 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-30 00:04:35 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-30 00:39:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-30 00:41:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-30 00:41:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-30 01:19:02 ERROR (MainThread) [custom_components.hacs] Timeout of 20 reached while waiting for https://api.github.com/rate_limit
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 450, in async_can_update
+    response = await self.async_github_api_method(self.githubapi.rate_limit)
+  File "/config/custom_components/hacs/base.py", line 504, in async_github_api_method
+    raise HacsException(_exception)
+custom_components.hacs.exceptions.HacsException: Timeout of 20 reached while waiting for https://api.github.com/rate_limit
+2022-08-30 02:05:26 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-30 02:05:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-30 07:53:16 ERROR (MainThread) [homeassistant.components.ipp.coordinator] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
+2022-08-30 10:21:28 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xBC8E:1:0x0405]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-08-30 10:21:28 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xBC8E:1:0x0001]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-08-30 10:21:30 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xBC8E:1:0x0402]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-08-30 10:38:56 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-30 10:40:45 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-30 10:40:45 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-30 13:39:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-30 13:41:47 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-30 13:41:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-30 17:40:19 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-30 18:21:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-30 18:21:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-31 00:26:58 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 00:26:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-31 00:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 00:41:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 00:41:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-31 02:27:29 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 02:27:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-31 10:38:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 10:38:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 10:40:37 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 10:40:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-31 12:16:00 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 12:37:48 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 12:37:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-31 13:39:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 13:41:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 13:41:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-31 15:13:02 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 17:02:20 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 17:02:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-31 21:47:12 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-31 23:59:22 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-31 23:59:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-01 00:00:03 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 00:00:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 00:39:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 00:41:43 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 00:41:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 02:00:23 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 02:00:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-01 10:38:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 10:39:00 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 10:40:40 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 10:40:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 12:16:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 12:29:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 12:29:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 13:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 13:41:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 13:41:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 14:53:14 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 16:49:03 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 16:49:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 22:37:10 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-01 23:18:26 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 23:18:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-01 23:47:46 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-01 23:47:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-02 00:39:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 00:39:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 00:41:37 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-02 00:41:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-02 01:48:27 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-02 01:48:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-02 10:38:55 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 10:40:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-02 10:40:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-02 11:19:12 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2022-09-02 12:14:55 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 12:32:17 WARNING (MainThread) [homeassistant.components.samsungtv] Unknown power_off command for UE50J6240 (192.168.1.66): sending KEY_POWEROFF and KEY_POWER
+2022-09-02 13:39:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 13:39:56 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 13:41:36 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-02 13:41:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-02 16:55:59 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 17:01:17 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-02 17:01:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-02 17:24:49 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 17:57:12 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:80162860-ab62-4776-936c-964e90fa5b7e, reason: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-09-02 17:57:22 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:57e11a49-d957-48c7-ab78-a4259aca3ccb, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 17:57:31 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:506653a6-c151-4600-9ddd-cf804864fd4e, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-02 23:45:40 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-02 23:45:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-03 00:39:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 00:41:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 00:41:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-03 01:46:21 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 01:46:21 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-03 09:27:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-03 09:27:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-03 10:38:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 10:38:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 10:40:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 10:40:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-03 10:44:28 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 10:44:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-03 12:45:28 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 12:45:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-03 13:39:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 13:39:59 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 13:41:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 13:41:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-03 17:56:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 17:57:01 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-03 17:58:01 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-03 17:58:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-03 17:58:11 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 00:39:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-04 00:40:04 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-04 00:41:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 00:41:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-04 10:39:00 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-04 10:40:49 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 10:40:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-04 12:45:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 12:45:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-04 13:40:00 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-04 13:41:50 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 13:41:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-04 15:11:01 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-04 15:29:21 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 15:29:21 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-04 20:54:33 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 20:54:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-04 21:47:46 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-04 22:20:54 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 22:20:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-04 22:21:04 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-04 23:57:41 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:7d0c9a40-3a58-49bb-a9df-1dfea4c70a99, reason: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-09-04 23:57:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:47c6b344-e1ed-480a-bca6-04240cb62aef, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-04 23:58:04 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:5af6265f-886e-4d94-8e15-10175ce4aecb, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-05 00:39:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-05 00:39:55 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-05 00:41:35 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-05 00:41:35 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-05 01:58:25 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-05 01:58:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-05 10:38:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-05 10:40:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-05 10:40:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-05 11:19:12 ERROR (MainThread) [homeassistant.components.analytics] Timeout sending analytics to https://analytics-api.home-assistant.io/v1
+2022-09-05 13:39:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-05 13:41:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-05 13:41:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-05 18:29:05 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-05 18:31:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-05 19:51:26 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-05 19:51:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-05 19:51:36 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-05 21:56:09 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from dankpad (192.168.1.25). (Mozilla/5.0 (X11; Linux x86_64; rv:104.0) Gecko/20100101 Firefox/104.0)
+2022-09-06 00:07:45 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:d4548bce-9aa6-47e6-b782-415c053ee846, reason: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-09-06 00:07:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:30c98987-bef2-4b12-b0ba-cc8cb2e79c0a, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-06 00:08:04 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:0e2692cf-4751-4c46-8df9-07eb847e2ef0, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-06 00:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 00:39:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 00:41:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-06 00:41:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-06 02:08:28 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-06 02:08:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-06 02:42:56 WARNING (MainThread) [zigpy.zcl] [0x2BC6:1:0x0704] Unknown cluster command 1 b'\x00\x00\x90\x12\x12nn\x0cl`\x02\x0e\x02nr\x8e\x92\x92n\x0c\x0cb\x02l`\x02\x0er\x92\x92n\x0c\x0cb\x02l`\x02\x9crl\x8c\x8e|\xe0\x0cll\x9c\x0el\xfc'
+2022-09-06 10:38:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 10:40:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-06 10:40:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-06 11:28:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 12:38:43 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-06 12:38:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-06 13:39:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 13:41:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-06 13:41:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-06 18:07:26 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 18:31:49 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:2e371275-8ddc-46a8-90cf-9061c47016b2, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 18:31:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:ccdba913-62a4-40ce-8699-fc379a4994d8, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-06 18:32:07 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:2fcdba62-7346-44aa-8a8b-c2ae4cfaee0f, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 00:39:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 00:41:40 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 00:41:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-07 00:42:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 00:42:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-07 02:43:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 02:43:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-07 10:38:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 10:40:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 10:40:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-07 13:16:45 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 13:16:45 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-07 13:16:55 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 13:39:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 13:39:55 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 13:41:35 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 13:41:35 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-07 15:43:49 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 19:17:08 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 19:17:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-07 21:03:22 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-07 21:11:09 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 21:11:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-07 22:07:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-07 22:07:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-08 00:06:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 00:06:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-08 00:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-08 00:41:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 00:41:41 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-08 02:07:22 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 02:07:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-08 10:38:56 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-08 10:40:46 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 10:40:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-08 12:19:16 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-08 12:29:06 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 12:29:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-08 13:37:28 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-08 13:46:47 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 13:46:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-08 19:05:59 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-08 19:05:59 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-08 19:06:09 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 00:23:22 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 00:23:22 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-09 00:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-09 00:41:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 00:41:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-09 02:24:23 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 02:24:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-09 10:38:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-09 10:38:56 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-09 10:40:36 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 10:40:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-09 13:39:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-09 13:41:48 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 13:41:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-09 14:44:35 ERROR (MainThread) [homeassistant.components.ipp.coordinator] Error fetching ipp data: Invalid response from API: Timeout occurred while connecting to IPP server.
+2022-09-09 17:36:41 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-09 18:54:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 18:54:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-09 21:04:25 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-09 21:46:11 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-09 21:46:11 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-09 22:20:10 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x36E5:1:0x0001]: async_initialize: all attempts have failed: [TimeoutError(), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.MAC_NO_ACK: 233>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-09-09 23:21:02 ERROR (MainThread) [custom_components.hacs] <Integration rsnodgrass/hass-integrations> GitHub returned 404 for https://api.github.com/repos/rsnodgrass/hass-integrations
+2022-09-09 23:21:02 ERROR (MainThread) [custom_components.hacs] <Integration rsnodgrass/hass-flo-water> GitHub returned 404 for https://api.github.com/repos/rsnodgrass/hass-flo-water
+2022-09-10 00:02:32 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 00:02:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-10 00:39:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-10 00:41:43 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 00:41:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-10 02:03:23 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 02:03:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-10 10:38:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-10 10:40:47 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 10:40:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-10 12:14:38 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-10 12:24:58 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 12:24:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-10 12:57:28 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-10 14:39:59 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 14:39:59 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-10 15:21:24 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/app.5fef107e.js:230:5712 TypeError: null is not an object (evaluating 't.length')
+2022-09-10 15:21:24 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/app.5fef107e.js:230:5712 TypeError: null is not an object (evaluating 't.length')
+2022-09-10 16:06:37 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-10 16:06:37 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-10 16:15:47 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-10 16:15:47 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-10 17:56:57 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-10 17:56:57 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-10 18:10:09 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:d8b277e2-5168-4efc-8829-5c7875a4cd32, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), OSError(113, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-10 18:10:21 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-10 18:10:21 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-11 00:37:15 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 00:37:15 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-11 02:38:25 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 02:38:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-11 03:00:06 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 03:00:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-11 09:19:07 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-11 09:19:07 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-11 09:58:59 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 09:58:59 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-11 09:59:09 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 10:28:37 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-11 10:28:37 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-11 10:38:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-11 10:40:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 10:40:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-11 13:39:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-11 13:40:00 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-11 13:41:40 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 13:41:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-11 14:25:31 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-11 17:34:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 17:34:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-11 17:34:52 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-11 20:17:47 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-11 20:17:47 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-12 00:39:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-12 00:39:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-12 00:41:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-12 00:41:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-12 01:41:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-12 01:41:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-12 03:42:29 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-12 03:42:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-12 10:38:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-12 10:40:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-12 10:40:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-12 11:44:23 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-12 16:37:15 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-12 16:37:15 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-12 19:28:39 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-12 20:20:27 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-12 20:20:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-12 20:21:30 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-12 20:21:37 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-12 20:21:47 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-13 00:05:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:5a822c18-dba0-42d4-92ad-eb3846566b5d, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-13 00:05:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:f0fa0853-f334-493c-8709-e2be73e769da, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-13 00:05:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed (re-)subscribing to: uuid:303300cb-eeb5-4423-91db-12f111847820, reason: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-13 00:05:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-13 00:06:18 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 00:06:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-13 00:06:23 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-09-13 00:06:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 00:06:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-13 00:06:43 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError("UpnpConnectionTimeoutError('TimeoutError()', None)", None)
+2022-09-13 00:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-13 00:39:59 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-13 00:41:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 00:41:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-13 02:08:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 02:08:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-13 10:38:55 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-13 10:40:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 10:40:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-13 11:12:05 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 11:12:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-13 12:38:57 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/core.446aadfa.js:1:9430 Uncaught Error: Suspend promise not set
+2022-09-13 13:39:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-13 13:39:56 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-13 13:41:36 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 13:41:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-13 19:57:19 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-13 20:02:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 20:02:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-13 20:21:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.132\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.132\', 9197)"))', None)
+2022-09-13 20:51:17 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-13 20:51:17 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-13 20:54:27 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-13 20:54:27 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-13 22:46:03 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-13 22:46:03 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-13 22:53:13 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-13 22:53:13 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-13 22:54:37 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-13 22:54:37 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-13 23:01:47 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-13 23:01:47 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-13 23:05:57 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-13 23:05:57 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-13 23:31:23 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-13 23:31:23 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-13 23:35:33 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-13 23:35:33 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-13 23:57:11 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-13 23:57:11 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-14 00:04:07 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-14 00:04:07 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-14 00:05:43 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-14 00:05:43 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-14 00:13:53 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-14 00:13:53 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-14 00:39:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-14 00:41:43 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-14 00:41:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-14 00:47:03 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-14 00:47:03 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-14 01:40:13 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-14 01:40:13 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-14 01:58:23 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-14 01:58:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-14 10:38:51 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-14 10:38:57 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-14 10:40:37 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-14 10:40:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-14 13:39:53 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-14 13:39:59 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-14 13:41:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-14 13:41:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-14 14:44:17 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-14 14:44:17 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-14 16:15:27 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-14 16:15:27 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-14 18:09:12 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-14 18:45:51 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-14 18:45:51 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-14 18:46:01 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-14 21:46:22 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 00:01:33 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 00:01:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-15 00:05:23 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-15 00:05:23 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-15 00:09:03 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 00:09:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 00:09:13 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 00:12:33 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-15 00:12:33 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-15 00:12:41 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-15 00:12:41 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-15 00:23:51 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-09-15 00:23:51 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-09-15 00:39:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 00:41:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 00:41:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 00:56:43 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c687b54d (Device: c687b54d @ 192.168.1.145:7000 (mac: 502cc687b54d))
+2022-09-15 00:56:43 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c687b54d data: Device gree-c687b54d is unavailable
+2022-09-15 02:02:24 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 02:02:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-15 10:38:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 10:38:58 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 10:40:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 10:40:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 11:23:49 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 11:49:29 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 11:49:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 11:49:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 13:23:08 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/gree/__init__.py", line 35, in _async_scan_update
+    await gree_discovery.discovery.scan()
+  File "/usr/lib/python3.9/site-packages/greeclimate/discovery.py", line 172, in scan
+    await self.search_devices()
+  File "/usr/lib/python3.9/site-packages/greeclimate/discovery.py", line 220, in search_devices
+    broadcastAddrs = self._get_broadcast_addresses()
+  File "/usr/lib/python3.9/site-packages/greeclimate/discovery.py", line 185, in _get_broadcast_addresses
+    for addr in netifaces.ifaddresses(iface).get(netifaces.AF_INET, []):
+ValueError: You must specify a valid interface name.
+2022-09-15 13:39:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 13:41:40 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 13:41:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 16:16:41 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 16:30:51 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 16:30:51 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 16:31:01 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 20:17:37 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-15 20:20:19 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x36E5:1:0x0001]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-09-15 21:04:13 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-15 21:04:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-15 21:04:23 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 00:04:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 00:04:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-16 00:39:48 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 00:39:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 00:41:34 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 00:41:34 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-16 02:05:25 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 02:05:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-09-16 10:38:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 10:40:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 10:40:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-16 11:43:29 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 11:55:49 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 11:55:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-16 13:39:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 13:41:40 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 13:41:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-16 15:30:22 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 16:31:31 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 16:31:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-16 16:31:41 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 17:39:22 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=464564130471341759), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.sensor] Error adding entities for domain sensor with platform frigate
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.switch] Error adding entities for domain switch with platform frigate
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.binary_sensor] Error adding entities for domain binary_sensor with platform frigate
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.sensor] Error while setting up frigate platform for sensor
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 257, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.switch] Error while setting up frigate platform for switch
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 257, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.binary_sensor] Error while setting up frigate platform for binary_sensor
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 257, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.camera] Error adding entities for domain camera with platform frigate
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:08:41 ERROR (MainThread) [homeassistant.components.camera] Error while setting up frigate platform for camera
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 257, in _async_setup_platform
+    await asyncio.gather(*pending)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 382, in async_add_entities
+    await asyncio.gather(*tasks)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity_platform.py", line 619, in _async_add_entity
+    await entity.add_to_platform_finish()
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/entity.py", line 809, in add_to_platform_finish
+    await self.async_added_to_hass()
+  File "/config/custom_components/frigate/__init__.py", line 394, in async_added_to_hass
+    self._sub_state = await async_subscribe_topics(self.hass, state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-09-16 18:09:50 ERROR (MainThread) [frontend.js.latest.202206010] :0:0 ResizeObserver loop completed with undelivered notifications.
+2022-09-16 18:09:55 ERROR (MainThread) [frontend.js.latest.202206010] :0:0 ResizeObserver loop completed with undelivered notifications.
+2022-09-16 18:21:25 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:21:25 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 
+2022-09-16 18:23:45 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:23:45 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 
+2022-09-16 18:23:50 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:23:55 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:24:00 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: 502, message='Bad Gateway', url=URL('http://192.168.1.9:5000/api/stats')
+2022-09-16 18:24:05 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: 502, message='Bad Gateway', url=URL('http://192.168.1.9:5000/api/stats')
+2022-09-16 18:24:10 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: 502, message='Bad Gateway', url=URL('http://192.168.1.9:5000/api/stats')
+2022-09-16 18:35:55 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:35:55 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 
+2022-09-16 18:36:10 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:36:10 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 
+2022-09-16 18:47:42 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-09-16 18:47:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-09-16 18:58:40 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 18:58:40 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 
+2022-09-16 19:10:50 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 19:10:50 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 
+2022-09-16 19:17:00 ERROR (MainThread) [custom_components.frigate.api] Error fetching information from http://192.168.1.9:5000/api/stats: Cannot connect to host 192.168.1.9:5000 ssl:default [Connect call failed ('192.168.1.9', 5000)]
+2022-09-16 19:17:00 ERROR (MainThread) [custom_components.frigate] Error fetching frigate data: 

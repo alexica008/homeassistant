@@ -1,0 +1,442 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "core.config_entries",
+    "data": {
+        "entries": [
+            {
+                "entry_id": "a9c7afd751355f9060da2eeb3e02db99",
+                "version": 1,
+                "domain": "sun",
+                "title": "Sun",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "import",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "78d71b39b121d35501ea14cc82971950",
+                "version": 1,
+                "domain": "radio_browser",
+                "title": "Radio Browser",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "onboarding",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "d105a344a0ed9eab196956c3a54c9bdf",
+                "version": 1,
+                "domain": "dlna_dms",
+                "title": "minidlna: minidlna",
+                "data": {
+                    "url": "http://192.168.1.8:8200/rootDesc.xml",
+                    "device_id": "uuid:4d696e69-444c-164e-9d41-62be86513479::urn:schemas-upnp-org:device:MediaServer:1",
+                    "source_id": "minidlna_minidlna"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ssdp",
+                "unique_id": "uuid:4d696e69-444c-164e-9d41-62be86513479::urn:schemas-upnp-org:device:MediaServer:1",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "45e72099344a9463fa185ebe87465b43",
+                "version": 1,
+                "domain": "ipp",
+                "title": "HP LaserJet MFP M130fw (A1A856)",
+                "data": {
+                    "host": "192.168.1.142",
+                    "port": 631,
+                    "ssl": false,
+                    "verify_ssl": false,
+                    "base_path": "/ipp/print",
+                    "name": "HP LaserJet MFP M130fw (A1A856)",
+                    "uuid": "564e4337-4b30-3134-3533-98e7f4a1a856"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "564e4337-4b30-3134-3533-98e7f4a1a856",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "3f08935022cdaa6d8e1e61b96a0efb24",
+                "version": 1,
+                "domain": "dlna_dms",
+                "title": "Raspy",
+                "data": {
+                    "url": "http://192.168.1.9:8200/rootDesc.xml"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": "uuid:4d696e69-444c-164e-9d41-7ec743988f14::urn:schemas-upnp-org:device:MediaServer:1",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "bc54e48dcbe81e20cf4d8befb6bdd659",
+                "version": 1,
+                "domain": "hacs",
+                "title": "",
+                "data": {
+                    "token": "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"
+                },
+                "options": {
+                    "sidepanel_title": "HACS",
+                    "sidepanel_icon": "hacs:hacs",
+                    "release_limit": 5,
+                    "country": "ALL",
+                    "appdaemon": true,
+                    "netdaemon": true,
+                    "debug": false,
+                    "experimental": false
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "faec4a8910c0968c5ed22ace595cbbd2",
+                "version": 1,
+                "domain": "sonoff",
+                "title": "alexandru_puscoci@yahoo.com",
+                "data": {
+                    "username": "alexandru_puscoci@yahoo.com",
+                    "password": "aepdlel1918S@"
+                },
+                "options": {
+                    "mode": "local",
+                    "debug": false
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "alexandru_puscoci@yahoo.com",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "2467b4d8cdcb21c8d41c8789e56b5265",
+                "version": 1,
+                "domain": "dlna_dmr",
+                "title": "[TV] Samsung 6 Series (55)",
+                "data": {
+                    "url": "http://192.168.1.132:9197/dmr",
+                    "device_id": "uuid:4c7e72fe-e093-4343-9d91-295bb5613a24",
+                    "type": "urn:schemas-upnp-org:device:MediaRenderer:1"
+                },
+                "options": {
+                    "listen_port": null,
+                    "callback_url_override": null,
+                    "poll_availability": false,
+                    "browse_unfiltered": false
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ssdp",
+                "unique_id": "uuid:4c7e72fe-e093-4343-9d91-295bb5613a24",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "fdcf6f469d8c46f76a555d06c13811cf",
+                "version": 2,
+                "domain": "samsungtv",
+                "title": "UE50J6282 (UE50J6240)",
+                "data": {
+                    "host": "192.168.1.66",
+                    "mac": "40:16:3b:30:0b:02",
+                    "manufacturer": "Samsung",
+                    "method": "encrypted",
+                    "model": "UE50J6240",
+                    "name": "UE50J6282",
+                    "port": 8000,
+                    "ssdp_rendering_control_location": "http://192.168.1.66:9197/dmr",
+                    "ssdp_main_tv_agent_location": "http://192.168.1.66:7677/MainTVServer2/",
+                    "token": "5f19a6818a0d72e0b85b8302f264433d",
+                    "session_id": "1"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "1c137697-e6a4-4ddf-94f5-c138c23ad372",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "df13bf6724989dd19793c74660a11933",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "GM1913",
+                "data": {
+                    "app_id": "io.homeassistant.companion.android",
+                    "app_name": "Home Assistant",
+                    "app_version": "2022.8.0-full (2624)",
+                    "device_name": "GM1913",
+                    "manufacturer": "OnePlus",
+                    "model": "GM1913",
+                    "os_name": "Android",
+                    "os_version": "30",
+                    "supports_encryption": false,
+                    "app_data": {
+                        "push_websocket_channel": true,
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+                        "push_token": "dq0rbitQSfm-bBpU8VXwfF:APA91bEulUq4EQCeYbua-FHp5Ftfm7e8moa4yNHg_7EPpoiyr9opvkZyDVlnmSM6i9dCyEqLsj4GI9jWueo6kXtxmesZkRjvrF1dWWlZjOoVSha-mJ9HGQ0UIwc7DvNvIne9Yqyn2ea1"
+                    },
+                    "device_id": "6af5c115d7bdf724",
+                    "webhook_id": "142c38ccf81d11952af46e4e6a7c8ef031e26d4a2eff73cf0434b087cd8aada4",
+                    "user_id": "17489d9724ce4fdf83bd967cdcfe83c1"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.homeassistant.companion.android-6af5c115d7bdf724",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "9c3f59148fa72c9423805cb20c0c6d8d",
+                "version": 1,
+                "domain": "dlna_dmr",
+                "title": "[TV] UE50J6282",
+                "data": {
+                    "url": "http://192.168.1.66:9197/dmr",
+                    "device_id": "uuid:4515a3d4-dfdf-4d6d-994e-39422d8fad8d",
+                    "type": "urn:schemas-upnp-org:device:MediaRenderer:1"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ssdp",
+                "unique_id": "uuid:4515a3d4-dfdf-4d6d-994e-39422d8fad8d",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "18a8be4ef13f4cee84d6001853ef0e77",
+                "version": 1,
+                "domain": "gree",
+                "title": "Gree Climate",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "gree",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "0a4632a2c07332cc0414d443a2543c89",
+                "version": 3,
+                "domain": "zha",
+                "title": "Sonoff Zigbee 3.0 USB Dong - /dev/ttyUSB0, s/n: a062fd5871d9eb118082148e6fe9f4d9 - ITead - 10C4:EA60",
+                "data": {
+                    "radio_type": "znp",
+                    "device": {
+                        "path": "/dev/ttyUSB0",
+                        "flow_control": null,
+                        "baudrate": 115200
+                    }
+                },
+                "options": {
+                    "custom_configuration": {
+                        "zha_options": {
+                            "consider_unavailable_battery": 21600,
+                            "consider_unavailable_mains": 7200,
+                            "enable_identify_on_join": true
+                        }
+                    }
+                },
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "usb",
+                "unique_id": "10C4:EA60_a062fd5871d9eb118082148e6fe9f4d9_ITead_Sonoff Zigbee 3.0 USB Dongle Plus",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "72e73a98610345050403f0bb84443df6",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Caracuda's iPhone",
+                "data": {
+                    "os_name": "iOS",
+                    "app_version": "2022.3 (2022.358)",
+                    "app_name": "Home Assistant",
+                    "manufacturer": "Apple",
+                    "device_id": "3C72C05B-DCF2-4268-BED0-391835440FF5",
+                    "model": "iPhone9,3",
+                    "supports_encryption": true,
+                    "os_version": "15.5",
+                    "device_name": "Caracuda's iPhone",
+                    "app_id": "io.robbie.HomeAssistant",
+                    "app_data": {
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification",
+                        "push_token": "dZaeR5IRrE3ei1YGgIHgEK:APA91bF8w7tMTYDoWJorU5gBo_Iyly0mkUpDRg8x1A48cdfiSj0RT81vXlDW-LRp8vUDGm4bMbtK8xLMWbYdpxDX4zU41IgYUNTpo1slUyYXuJ3xJu9E7GR90woiUUgxuwqt9ArvCzXE"
+                    },
+                    "webhook_id": "ab16aef17e54848be90b422a92484edfec68d6a736039d92bd207225dc69dd9f",
+                    "secret": "dcce2b12449f99dde9bd21aa727afa9c0cfccb7613f3fbbbabbbd63a3b605843",
+                    "user_id": "ee449a92dd6446fc88d963a15d3dd4a9"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.robbie.HomeAssistant-3C72C05B-DCF2-4268-BED0-391835440FF5",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "86aed33847edba1ee92635b41a153608",
+                "version": 2,
+                "domain": "samsungtv",
+                "title": "Samsung 6 Series (55) (UE55MU6102)",
+                "data": {
+                    "host": "192.168.1.132",
+                    "mac": "54:bd:79:9f:2b:ce",
+                    "manufacturer": "Samsung",
+                    "method": "websocket",
+                    "model": "UE55MU6102",
+                    "name": "Samsung 6 Series (55)",
+                    "port": 8002,
+                    "ssdp_rendering_control_location": "http://192.168.1.132:9197/dmr",
+                    "ssdp_main_tv_agent_location": null,
+                    "token": "68790260"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": "a87b5e3c-6a8b-48a1-a0c6-2649ab492a15",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "70533559648c4e6edb1aad1d921bad97",
+                "version": 1,
+                "domain": "tasmota",
+                "title": "Tasmota",
+                "data": {
+                    "discovery_prefix": "tasmota/discovery"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "157f0669523040dbeed5017a4ad237ee",
+                "version": 1,
+                "domain": "mqtt",
+                "title": "MQTT",
+                "data": {},
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "ignore",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "5edb73ac5d94680e39e41bdc7b9dea90",
+                "version": 1,
+                "domain": "spotify",
+                "title": "Alexica",
+                "data": {
+                    "auth_implementation": "cloud",
+                    "token": {
+                        "access_token": "BQAb8cj4mp5gwUed3yQ5w8hQlgJZIYGQMCNMm4J36LXakNI0M6SN4hHc-XY4KJ4B-1OBUngEUwe-OdxPQIxwluESyF7xsRgHnMkrbZPBzJmVxqbZL7tGum-pQfiCSSsr4_9cez-2eZW8rzE8bT2sLhjTHR2F9CaEZVU4Amqc2lf5i0dsuEgUyW6zENdb3WdcPF3zbNJoLkl63VYYi954vVLSQQ6yHgerVccNwAr3Ua9bp74q4Y7HtOpmc0SRb6SbpA",
+                        "token_type": "Bearer",
+                        "expires_in": 3600,
+                        "refresh_token": "AQAung2iKH01jLp5MNHwsFgQJQW_2jqVlvU49k0FtuOd5pYsxFdV0ZrsQ-8bxZym761pMUZdOiINskGALYl8KxRRR1U3Ic4h2Q_zfSmTCxMOdANMgoQ3cIzDAL1GlolRFZA",
+                        "scope": "playlist-read-private playlist-read-collaborative user-modify-playback-state user-library-read user-follow-read user-read-playback-state user-read-recently-played user-read-playback-position user-read-private user-top-read",
+                        "service": "spotify",
+                        "expires_at": 1661678283.3807418
+                    },
+                    "id": "kv72m32ubhbgq1looldv6fz4c",
+                    "name": "Alexica"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "zeroconf",
+                "unique_id": "kv72m32ubhbgq1looldv6fz4c",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "fdbc16fdedc51b4542768a4e2dfe0eff",
+                "version": 1,
+                "domain": "mobile_app",
+                "title": "Catalin\u2019s iPhone",
+                "data": {
+                    "device_name": "iPhone",
+                    "model": "iPhone14,5",
+                    "app_version": "2022.8 (2022.387)",
+                    "app_name": "Home Assistant",
+                    "os_name": "iOS",
+                    "os_version": "16.0",
+                    "manufacturer": "Apple",
+                    "app_id": "io.robbie.HomeAssistant",
+                    "supports_encryption": true,
+                    "device_id": "BF8D101F-DB78-4282-9D77-9F5492A4CCA7",
+                    "app_data": {
+                        "push_token": "f4sSfIBVCkpgrUk1doQdkH:APA91bEv_kMv6oZLhYZZD57F3Mv-FbOqCK_XJF6dynb5tUJB18v374o4mS2N1mEZsFlk56h6RU0l_KGRCJZlHgea7hwKBVR1kOyM4mP9A43PfTC2k6UP7zpsWFq4mNJUK7x9N46IdoTX",
+                        "push_url": "https://mobile-apps.home-assistant.io/api/sendPushNotification"
+                    },
+                    "webhook_id": "cb3b90e3c3cf1772a6d2d84cd7c036a5d9d9980154c642092d92e448cc5cfc2a",
+                    "secret": "671358da13586fce82381018be553760de033da4644504a7a50785d1489bf709",
+                    "user_id": "17489d9724ce4fdf83bd967cdcfe83c1",
+                    "no_legacy_encryption": true
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "registration",
+                "unique_id": "io.robbie.HomeAssistant-BF8D101F-DB78-4282-9D77-9F5492A4CCA7",
+                "disabled_by": null
+            },
+            {
+                "entry_id": "2ff27d628009be8e6752dd5a254477f6",
+                "version": 1,
+                "domain": "asuswrt",
+                "title": "192.168.1.1",
+                "data": {
+                    "host": "192.168.1.1",
+                    "username": "root",
+                    "protocol": "ssh",
+                    "mode": "router",
+                    "password": "meetyouthere"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            },
+            {
+                "entry_id": "f2f797d793f46a86ae20e4056dc723a6",
+                "version": 2,
+                "domain": "frigate",
+                "title": "192.168.1.9:5000",
+                "data": {
+                    "url": "http://192.168.1.9:5000"
+                },
+                "options": {},
+                "pref_disable_new_entities": false,
+                "pref_disable_polling": false,
+                "source": "user",
+                "unique_id": null,
+                "disabled_by": null
+            }
+        ]
+    }
+}

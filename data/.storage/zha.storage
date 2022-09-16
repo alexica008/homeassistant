@@ -1,0 +1,74 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "zha.storage",
+    "data": {
+        "devices": [
+            {
+                "name": "Texas Instruments CC2531, Z-Stack Home 1.2 (build 20201127)",
+                "ieee": "00:12:4b:00:0f:fb:77:b6",
+                "last_seen": 1663335728.754141
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:25:1f:1f:b2",
+                "last_seen": 1663345956.334971
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:25:1e:e2:c3",
+                "last_seen": 1663346144.35099
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:25:1e:f5:42",
+                "last_seen": 1663345841.604993
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:25:1c:a0:32",
+                "last_seen": 1663346244.589504
+            },
+            {
+                "name": "Texas Instruments CC1352/CC2652, Z-Stack 3.30+ (build 20210708)",
+                "ieee": "00:12:4b:00:24:c8:c4:46",
+                "last_seen": 1663335743.206168
+            },
+            {
+                "name": "eWeLink ZB-SW01",
+                "ieee": "00:12:4b:00:23:ae:32:5a",
+                "last_seen": 1663346293.703434
+            },
+            {
+                "name": "easyiot UT-01",
+                "ieee": "00:3c:84:ff:fe:bf:fe:6d",
+                "last_seen": 1663342993.257676
+            },
+            {
+                "name": "eWeLink ZB-SW01",
+                "ieee": "00:12:4b:00:23:ad:43:6d",
+                "last_seen": 1663346284.264132
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:22:cf:0a:75",
+                "last_seen": 1663346083.348291
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:22:cf:0c:1e",
+                "last_seen": 1663345977.084291
+            },
+            {
+                "name": "eWeLink TH01",
+                "ieee": "00:12:4b:00:22:d2:da:c7",
+                "last_seen": 1663346173.656136
+            },
+            {
+                "name": "IKEA of Sweden TRADFRI on/off switch",
+                "ieee": "00:3c:84:ff:fe:25:a2:a2",
+                "last_seen": 1663272773.868136
+            }
+        ]
+    }
+}

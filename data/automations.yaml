@@ -1,0 +1,126 @@
+- id: '1658406723858'
+  alias: Water Garden Centru Start
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:15:00
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 81c07bbf60945e0dd5141c826b6ddcc4
+    entity_id: switch.sonoff_1000aa6b5c
+    domain: switch
+  mode: single
+- id: '1658406910008'
+  alias: Water Garden Centru Stop
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:30:00
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 81c07bbf60945e0dd5141c826b6ddcc4
+    entity_id: switch.sonoff_1000aa6b5c
+    domain: switch
+  mode: single
+- id: '1658407036822'
+  alias: Water Garden Stanga Start
+  description: ''
+  trigger:
+  - platform: time
+    at: 03:00:00
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 30318ed8f5004fd68119ac4d8095638b
+    entity_id: switch.sonoff_1000aa6ad2
+    domain: switch
+  mode: single
+- id: '1658407697540'
+  alias: Water Garden Stanga Stop
+  description: ''
+  trigger:
+  - platform: time
+    at: 03:30:00
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 30318ed8f5004fd68119ac4d8095638b
+    entity_id: switch.sonoff_1000aa6ad2
+    domain: switch
+  mode: single
+- id: '1658408445372'
+  alias: Water Garden Dreapta Start
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:00:00
+  condition: []
+  action:
+  - type: turn_on
+    device_id: dfcf4e27795a426324dfcaa43290dcfe
+    entity_id: switch.sonoff_1000aa68a6
+    domain: switch
+  mode: single
+- id: '1658408477637'
+  alias: Water Garden Dreapta Stop
+  description: ''
+  trigger:
+  - platform: time
+    at: 02:15:00
+  condition: []
+  action:
+  - type: turn_off
+    device_id: dfcf4e27795a426324dfcaa43290dcfe
+    entity_id: switch.sonoff_1000aa68a6
+    domain: switch
+  mode: single
+- id: '1659882398477'
+  alias: Bedroom lights off
+  description: ''
+  trigger:
+  - device_id: 7a06364fe6e3caa7156d9154d050af0c
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+  condition: []
+  action:
+  - type: turn_off
+    device_id: 3850c012080766d0ac62943f0f80f846
+    entity_id: light.light_bedroom_on_off
+    domain: light
+  mode: single
+- id: '1659882517835'
+  alias: Bedroom lights on
+  description: ''
+  trigger:
+  - device_id: 7a06364fe6e3caa7156d9154d050af0c
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+  condition: []
+  action:
+  - type: turn_on
+    device_id: 3850c012080766d0ac62943f0f80f846
+    entity_id: light.light_bedroom_on_off
+    domain: light
+  mode: single
+- id: '1660899896927'
+  alias: Notificare curent
+  description: ''
+  trigger:
+  - device_id: c1e138a6c7f9d71491910081604431f7
+    domain: zha
+    platform: device
+    type: device_offline
+    subtype: device_offline
+  condition: []
+  action:
+  - service: notify.mobile_app_gm1913
+    data:
+      message: 'A sărit siguranța! '
+      title: 'Alerta! '
+  mode: single

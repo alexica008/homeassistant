@@ -1,0 +1,178 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "theme": "Backend-selected",
+                    "title": "Climate",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.temp_living_room_temperature"
+                                },
+                                {
+                                    "entity": "sensor.temp_garden_temperature"
+                                },
+                                {
+                                    "entity": "sensor.temp_office_temperature"
+                                },
+                                {
+                                    "entity": "sensor.temp_bedroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.temp_server_room_temperature"
+                                },
+                                {
+                                    "entity": "sensor.temp_small_bedroom_temperature"
+                                },
+                                {
+                                    "entity": "sensor.temp_play_room_temperature"
+                                }
+                            ],
+                            "title": "Temperature"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "sensor.temp_living_room_humidity"
+                                },
+                                {
+                                    "entity": "sensor.temp_garden_humidity"
+                                },
+                                {
+                                    "entity": "sensor.temp_office_humidity"
+                                },
+                                {
+                                    "entity": "sensor.temp_bedroom_humidity"
+                                },
+                                {
+                                    "entity": "sensor.temp_server_room_humidity"
+                                },
+                                {
+                                    "entity": "sensor.temp_small_bedroom_humidity"
+                                },
+                                {
+                                    "entity": "sensor.temp_play_room_humidity"
+                                }
+                            ],
+                            "title": "Humidity"
+                        },
+                        {
+                            "type": "thermostat",
+                            "entity": "climate.ac_bedroom"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "switch.ac_bedroom_fresh_air",
+                                "switch.ac_bedroom_panel_light",
+                                "switch.ac_bedroom_quiet",
+                                "switch.ac_bedroom_xfan"
+                            ]
+                        },
+                        {
+                            "type": "thermostat",
+                            "entity": "climate.ac_living_room"
+                        },
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "switch.ac_living_room_fresh_air",
+                                "switch.ac_living_room_panel_light",
+                                "switch.ac_living_room_quiet",
+                                "switch.ac_living_room_xfan"
+                            ]
+                        },
+                        {
+                            "show_name": true,
+                            "show_icon": true,
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "light.light_bedroom_on_off",
+                            "name": "Light Bedroom"
+                        },
+                        {
+                            "show_name": true,
+                            "show_icon": true,
+                            "type": "button",
+                            "tap_action": {
+                                "action": "toggle"
+                            },
+                            "entity": "light.light_garage_on_off",
+                            "name": "Light Garage"
+                        },
+                        {
+                            "type": "media-control",
+                            "entity": "media_player.samsung_6_series_55"
+                        }
+                    ]
+                },
+                {
+                    "theme": "Backend-selected",
+                    "title": "Garden",
+                    "path": "garden",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                {
+                                    "entity": "switch.sonoff_1000aa68a6"
+                                },
+                                {
+                                    "entity": "switch.sonoff_1000aa6b5c"
+                                },
+                                {
+                                    "entity": "switch.sonoff_1000aa6ad2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "theme": "Backend-selected",
+                    "title": "Router",
+                    "path": "router",
+                    "icon": "mdi:router-network",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "sensor.asuswrt_devices_connected"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "theme": "Backend-selected",
+                    "title": "Cameras",
+                    "path": "cameras",
+                    "icon": "mdi:video",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "entities",
+                            "entities": [
+                                "update.frigate_server",
+                                "sensor.fata_ghidigeni_skipped_fps",
+                                "sensor.fata_ghidigeni_process_fps",
+                                "sensor.fata_ghidigeni_detection_fps",
+                                "sensor.fata_ghidigeni_camera_fps"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

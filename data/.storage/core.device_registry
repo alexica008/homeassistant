@@ -1,0 +1,944 @@
+{
+    "version": 1,
+    "minor_version": 3,
+    "key": "core.device_registry",
+    "data": {
+        "devices": [
+            {
+                "config_entries": [
+                    "45e72099344a9463fa185ebe87465b43"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "ipp",
+                        "564e4337-4b30-3134-3533-98e7f4a1a856"
+                    ]
+                ],
+                "manufacturer": "HP",
+                "model": "HP LaserJet MFP M129-M134",
+                "name": "HP LaserJet MFP M129-M134",
+                "sw_version": "20201023",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "2fd29589b0d6271ec258eadca4869400",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "bc54e48dcbe81e20cf4d8befb6bdd659"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "hacs",
+                        "0717a0cd-745c-48fd-9b16-c8534c9704f9-bc944b0f-fd42-4a58-a072-ade38d1444cd"
+                    ]
+                ],
+                "manufacturer": "hacs.xyz",
+                "model": "",
+                "name": "HACS",
+                "sw_version": "1.26.2",
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "1da76af2e4ca3d86e17d52f87067126c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "homeassistant://hacs"
+            },
+            {
+                "config_entries": [
+                    "2ff27d628009be8e6752dd5a254477f6",
+                    "faec4a8910c0968c5ed22ace595cbbd2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a4:cf:12:b8:98:93"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "sonoff",
+                        "1000aa68a6"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "SV",
+                "name": "Test3",
+                "sw_version": "2.9.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "dfcf4e27795a426324dfcaa43290dcfe",
+                "via_device_id": null,
+                "area_id": "garden",
+                "name_by_user": "Dreapta",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "2ff27d628009be8e6752dd5a254477f6",
+                    "faec4a8910c0968c5ed22ace595cbbd2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a4:cf:12:b8:92:ee"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "sonoff",
+                        "1000aa6b5c"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "SV",
+                "name": "Test2",
+                "sw_version": "2.9.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "81c07bbf60945e0dd5141c826b6ddcc4",
+                "via_device_id": null,
+                "area_id": "garden",
+                "name_by_user": "Centru",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "2ff27d628009be8e6752dd5a254477f6",
+                    "faec4a8910c0968c5ed22ace595cbbd2"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "a4:cf:12:b8:97:89"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "sonoff",
+                        "1000aa6ad2"
+                    ]
+                ],
+                "manufacturer": "SONOFF",
+                "model": "SV",
+                "name": "Test1",
+                "sw_version": "2.9.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "30318ed8f5004fd68119ac4d8095638b",
+                "via_device_id": null,
+                "area_id": "garden",
+                "name_by_user": "Stanga",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "df13bf6724989dd19793c74660a11933"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "6af5c115d7bdf724"
+                    ]
+                ],
+                "manufacturer": "OnePlus",
+                "model": "GM1913",
+                "name": "GM1913",
+                "sw_version": "30",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "44d493c51e93103cbe13f2d3b00b64c6",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "2467b4d8cdcb21c8d41c8789e56b5265"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:4c7e72fe-e093-4343-9d91-295bb5613a24"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "dlna_dmr",
+                        "uuid:4c7e72fe-e093-4343-9d91-295bb5613a24"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics",
+                "model": "UE55MU6102",
+                "name": "[TV] Samsung 6 Series (55)",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "c31717f1e6c0aa7e5f18cfecc3a6a53d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "fdcf6f469d8c46f76a555d06c13811cf",
+                    "2ff27d628009be8e6752dd5a254477f6"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "40:16:3b:30:0b:02"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "samsungtv",
+                        "1c137697-e6a4-4ddf-94f5-c138c23ad372"
+                    ]
+                ],
+                "manufacturer": "Samsung",
+                "model": "UE50J6240",
+                "name": "UE50J6282",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "d3768f0f6d042c58acd33a735d1be2bc",
+                "via_device_id": null,
+                "area_id": "living_room",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "18a8be4ef13f4cee84d6001853ef0e77"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "50:2c:c6:a4:6f:45"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "gree",
+                        "502cc6a46f45"
+                    ]
+                ],
+                "manufacturer": "Gree",
+                "model": null,
+                "name": "c6a46f45",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "ff09afa787673b07d0e68b7f99fd7410",
+                "via_device_id": null,
+                "area_id": "living_room",
+                "name_by_user": "AC Living Room",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "18a8be4ef13f4cee84d6001853ef0e77"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "50:2c:c6:87:b5:4d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "gree",
+                        "502cc687b54d"
+                    ]
+                ],
+                "manufacturer": "Gree",
+                "model": null,
+                "name": "c687b54d",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "6351343b381843e5f9d7cdf270cc57c8",
+                "via_device_id": null,
+                "area_id": "bedroom",
+                "name_by_user": "AC Bedroom",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "9c3f59148fa72c9423805cb20c0c6d8d"
+                ],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:4515a3d4-dfdf-4d6d-994e-39422d8fad8d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "dlna_dmr",
+                        "uuid:4515a3d4-dfdf-4d6d-994e-39422d8fad8d"
+                    ]
+                ],
+                "manufacturer": "Samsung Electronics",
+                "model": "UE50J6240",
+                "name": "[TV] UE50J6282",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "a62a98336ec367dabda1e7176f5ae5e4",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:0f:fb:77:b6"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:0f:fb:77:b6"
+                    ]
+                ],
+                "manufacturer": "unk_manufacturer",
+                "model": "unk_model",
+                "name": "unk_manufacturer unk_model",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "11060fafcd99c604c8bcc4763cf00f8a",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:24:c8:c4:46"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:24:c8:c4:46"
+                    ]
+                ],
+                "manufacturer": "ZHA",
+                "model": "ZNP = Texas Instruments Z-Stack ZNP protocol: CC253x, CC26x2, CC13x2",
+                "name": "Zigbee Coordinator",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "142f1b5a3c332df3e3ab272581b87755",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:25:1c:a0:32"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:25:1c:a0:32"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "30305ff608d7d6835784620f3890819a",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "living_room",
+                "name_by_user": "Temp Living Room",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:25:1f:1f:b2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:25:1f:1f:b2"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "7e8621756e1428cb373d27d631990ef1",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "office",
+                "name_by_user": "Temp Office",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:25:1e:f5:42"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:25:1e:f5:42"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "f67bb2d93ce13976960c614bd9120845",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "bedroom",
+                "name_by_user": "Temp Bedroom",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:23:ae:32:5a"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:23:ae:32:5a"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "ZB-SW01",
+                "name": "eWeLink ZB-SW01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "c1e138a6c7f9d71491910081604431f7",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "garage",
+                "name_by_user": "Light Garage",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "72e73a98610345050403f0bb84443df6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "3C72C05B-DCF2-4268-BED0-391835440FF5"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone9,3",
+                "name": "Caracuda's iPhone",
+                "sw_version": "15.5",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "adf970b886cdbcb904000d19055adf8c",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "86aed33847edba1ee92635b41a153608"
+                ],
+                "connections": [
+                    [
+                        "mac",
+                        "54:bd:79:9f:2b:ce"
+                    ],
+                    [
+                        "mac",
+                        "none"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "samsungtv",
+                        "a87b5e3c-6a8b-48a1-a0c6-2649ab492a15"
+                    ]
+                ],
+                "manufacturer": "Samsung",
+                "model": "UE55MU6102",
+                "name": "Samsung 6 Series (55)",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "0b90184e88d8b5bc093c657bd6227ec8",
+                "via_device_id": null,
+                "area_id": "bedroom",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:3c:84:ff:fe:bf:fe:6d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:3c:84:ff:fe:bf:fe:6d"
+                    ]
+                ],
+                "manufacturer": "easyiot",
+                "model": "UT-01",
+                "name": "easyiot UT-01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "e01e49fff3f08e2c58f113ab02e48497",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "bedroom",
+                "name_by_user": "Bridge Bedroom",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:23:ad:43:6d"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:23:ad:43:6d"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "ZB-SW01",
+                "name": "eWeLink ZB-SW01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "3850c012080766d0ac62943f0f80f846",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "bedroom",
+                "name_by_user": "Light Bedroom",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "5edb73ac5d94680e39e41bdc7b9dea90"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "spotify",
+                        "kv72m32ubhbgq1looldv6fz4c"
+                    ]
+                ],
+                "manufacturer": "Spotify AB",
+                "model": "Spotify premium",
+                "name": "Spotify Alexica",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": "service",
+                "id": "c0885cc0556b5e22651696de5f02d76d",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "https://open.spotify.com"
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:22:cf:0a:75"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:22:cf:0a:75"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "e0184e8ed550995de92f592f876ca89b",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "serverroom",
+                "name_by_user": "Temp Server Room",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:22:cf:0c:1e"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:22:cf:0c:1e"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "aa8a1b3d96bc74aa80f56eecd0c213ad",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "play_room",
+                "name_by_user": "Temp Play Room",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:22:d2:da:c7"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:22:d2:da:c7"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "e09d54f8db6df938e49a211f05fdea74",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "small_bedroom",
+                "name_by_user": "Temp Small Bedroom",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:3c:84:ff:fe:25:a2:a2"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:3c:84:ff:fe:25:a2:a2"
+                    ]
+                ],
+                "manufacturer": "IKEA of Sweden",
+                "model": "TRADFRI on/off switch",
+                "name": "IKEA of Sweden TRADFRI on/off switch",
+                "sw_version": "0x22010631",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "7a06364fe6e3caa7156d9154d050af0c",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "living_room",
+                "name_by_user": "IKEA switch",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "fdbc16fdedc51b4542768a4e2dfe0eff"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "mobile_app",
+                        "BF8D101F-DB78-4282-9D77-9F5492A4CCA7"
+                    ]
+                ],
+                "manufacturer": "Apple",
+                "model": "iPhone14,5",
+                "name": "iPhone",
+                "sw_version": "16.0",
+                "hw_version": null,
+                "entry_type": null,
+                "id": "8893051b818ceed8be9dd680043f29c1",
+                "via_device_id": null,
+                "area_id": null,
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "0a4632a2c07332cc0414d443a2543c89"
+                ],
+                "connections": [
+                    [
+                        "zigbee",
+                        "00:12:4b:00:25:1e:e2:c3"
+                    ]
+                ],
+                "identifiers": [
+                    [
+                        "zha",
+                        "00:12:4b:00:25:1e:e2:c3"
+                    ]
+                ],
+                "manufacturer": "eWeLink",
+                "model": "TH01",
+                "name": "eWeLink TH01",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "9581f60efa926e637f400ec6549fd630",
+                "via_device_id": "142f1b5a3c332df3e3ab272581b87755",
+                "area_id": "garden",
+                "name_by_user": "Temp Garden",
+                "disabled_by": null,
+                "configuration_url": null
+            },
+            {
+                "config_entries": [
+                    "2ff27d628009be8e6752dd5a254477f6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "asuswrt",
+                        "AsusWRT"
+                    ]
+                ],
+                "manufacturer": "Asus",
+                "model": "RT-N18U",
+                "name": "192.168.1.1",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "73aaaa2e067e2837aeecfeaddd8de405",
+                "via_device_id": null,
+                "area_id": "serverroom",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.1.1"
+            },
+            {
+                "config_entries": [
+                    "f2f797d793f46a86ae20e4056dc723a6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "frigate",
+                        "f2f797d793f46a86ae20e4056dc723a6"
+                    ]
+                ],
+                "manufacturer": "Frigate",
+                "model": "2.3/0.10.1-83481af",
+                "name": "Frigate",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "c21603c78417a891e479945359a6b595",
+                "via_device_id": "c21603c78417a891e479945359a6b595",
+                "area_id": "serverroom",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.1.9:5000"
+            },
+            {
+                "config_entries": [
+                    "f2f797d793f46a86ae20e4056dc723a6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "frigate",
+                        "f2f797d793f46a86ae20e4056dc723a6:fata_ghidigeni"
+                    ]
+                ],
+                "manufacturer": "Frigate",
+                "model": "2.3/0.10.1-83481af",
+                "name": "Fata Ghidigeni",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "bb90f4ea60970caa70d82c6d10f487ba",
+                "via_device_id": "c21603c78417a891e479945359a6b595",
+                "area_id": "garden",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.1.9:5000/cameras/fata_ghidigeni"
+            },
+            {
+                "config_entries": [
+                    "f2f797d793f46a86ae20e4056dc723a6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "frigate",
+                        "f2f797d793f46a86ae20e4056dc723a6:fata_verii"
+                    ]
+                ],
+                "manufacturer": "Frigate",
+                "model": "2.3/0.10.1-83481af",
+                "name": "Fata Verii",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "e0d26fd19715a4f737dbc013cfb47de7",
+                "via_device_id": "c21603c78417a891e479945359a6b595",
+                "area_id": "garden",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.1.9:5000/cameras/fata_verii"
+            },
+            {
+                "config_entries": [
+                    "f2f797d793f46a86ae20e4056dc723a6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "frigate",
+                        "f2f797d793f46a86ae20e4056dc723a6:spate_dreapta"
+                    ]
+                ],
+                "manufacturer": "Frigate",
+                "model": "2.3/0.10.1-83481af",
+                "name": "Spate Dreapta",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "286709d34e20e91435d5339320b9dc06",
+                "via_device_id": "c21603c78417a891e479945359a6b595",
+                "area_id": "garden",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.1.9:5000/cameras/spate_dreapta"
+            },
+            {
+                "config_entries": [
+                    "f2f797d793f46a86ae20e4056dc723a6"
+                ],
+                "connections": [],
+                "identifiers": [
+                    [
+                        "frigate",
+                        "f2f797d793f46a86ae20e4056dc723a6:spate_stanga"
+                    ]
+                ],
+                "manufacturer": "Frigate",
+                "model": "2.3/0.10.1-83481af",
+                "name": "Spate Stanga",
+                "sw_version": null,
+                "hw_version": null,
+                "entry_type": null,
+                "id": "97b3eee91d57c502a85bb1cc3c51df95",
+                "via_device_id": "c21603c78417a891e479945359a6b595",
+                "area_id": "garden",
+                "name_by_user": null,
+                "disabled_by": null,
+                "configuration_url": "http://192.168.1.9:5000/cameras/spate_stanga"
+            }
+        ],
+        "deleted_devices": []
+    }
+}

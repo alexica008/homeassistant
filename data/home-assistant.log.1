@@ -1,0 +1,543 @@
+2022-08-24 07:43:59 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-24 07:43:59 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration frigate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-24 07:43:59 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-24 07:44:01 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2022-08-24 07:44:01 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=44 from 2022-08-22 11:50:39.285582)
+2022-08-24 07:44:10 WARNING (MainThread) [homeassistant.config_entries] Config entry 'HP LaserJet MFP M130fw (A1A856)' for ipp integration not ready yet: Invalid response from API: Error occurred while communicating with IPP server.; Retrying in background
+2022-08-24 07:44:12 WARNING (MainThread) [custom_components.sonoff] Can't login with mode: local
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/lib/python3.9/socket.py", line 953, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/config/custom_components/sonoff/__init__.py", line 163, in async_setup_entry
+    await registry.cloud.login(username, password)
+  File "/config/custom_components/sonoff/core/ewelink/cloud.py", line 136, in login
+    r = await self.session.post(
+  File "/usr/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/usr/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host eu-apia.coolkit.cc:443 ssl:default [Try again]
+2022-08-24 07:44:12 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Alexica for spotify
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/config_entries.py", line 339, in async_setup
+    result = await component.async_setup_entry(hass, self)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/spotify/__init__.py", line 109, in async_setup_entry
+    implementation = await async_get_config_entry_implementation(hass, entry)
+  File "/usr/lib/python3.9/site-packages/homeassistant/helpers/config_entry_oauth2_flow.py", line 380, in async_get_config_entry_implementation
+    raise ValueError("Implementation not available")
+ValueError: Implementation not available
+2022-08-24 07:44:13 ERROR (MainThread) [custom_components.hacs] Request exception for 'https://api.github.com/rate_limit' with - Cannot connect to host api.github.com:443 ssl:default [Try again]
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 450, in async_can_update
+    response = await self.async_github_api_method(self.githubapi.rate_limit)
+  File "/config/custom_components/hacs/base.py", line 504, in async_github_api_method
+    raise HacsException(_exception)
+custom_components.hacs.exceptions.HacsException: Request exception for 'https://api.github.com/rate_limit' with - Cannot connect to host api.github.com:443 ssl:default [Try again]
+2022-08-24 07:45:03 WARNING (MainThread) [homeassistant.bootstrap] Waiting on integrations to complete setup: radio_browser
+2022-08-24 07:45:19 ERROR (MainThread) [homeassistant.config_entries] Error setting up entry Radio Browser for radio_browser
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/config_entries.py", line 339, in async_setup
+    result = await component.async_setup_entry(hass, self)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/radio_browser/__init__.py", line 25, in async_setup_entry
+    await radios.stats()
+  File "/usr/lib/python3.9/site-packages/radios/radio_browser.py", line 124, in stats
+    response = await self._request("stats")
+  File "/usr/lib/python3.9/site-packages/backoff/_async.py", line 133, in retry
+    ret = await target(*args, **kwargs)
+  File "/usr/lib/python3.9/site-packages/radios/radio_browser.py", line 73, in _request
+    result = await resolver.query("_api._tcp.radio-browser.info", "SRV")
+aiodns.error.DNSError: (12, 'Timeout while contacting DNS servers')
+2022-08-24 07:45:19 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/tasmota/__init__.py", line 88, in start_platforms
+    await discovery.async_start(
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/tasmota/discovery.py", line 199, in async_start
+    await tasmota_discovery.start_discovery(
+  File "/usr/lib/python3.9/site-packages/hatasmota/discovery.py", line 184, in start_discovery
+    await self._subscribe_discovery_topic(device_discovered, sensors_discovered)
+  File "/usr/lib/python3.9/site-packages/hatasmota/discovery.py", line 273, in _subscribe_discovery_topic
+    self._sub_state = await self._mqtt_client.subscribe(self._sub_state, topics)
+  File "/usr/lib/python3.9/site-packages/hatasmota/mqtt.py", line 106, in subscribe
+    return await self._subscribe(sub_state, topics)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/tasmota/__init__.py", line 62, in _subscribe_topics
+    await async_subscribe_topics(hass, sub_state)
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 126, in async_subscribe_topics
+    await sub.subscribe()
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/subscription.py", line 57, in subscribe
+    self.unsubscribe_callback = await self.subscribe_task
+  File "/usr/lib/python3.9/site-packages/homeassistant/components/mqtt/client.py", line 198, in async_subscribe
+    async_remove = await hass.data[DATA_MQTT].async_subscribe(
+KeyError: 'mqtt'
+2022-08-24 07:46:23 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1E7C:1:0x0405]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.MAC_NO_ACK: 233>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-08-24 07:46:29 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1E7C:1:0x0402]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-08-24 07:46:29 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1E7C:1:0x0001]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-08-24 07:46:53 ERROR (MainThread) [custom_components.hacs] Request exception for 'https://api.github.com/rate_limit' with - Cannot connect to host api.github.com:443 ssl:default [Try again]
+Traceback (most recent call last):
+  File "/config/custom_components/hacs/base.py", line 450, in async_can_update
+    response = await self.async_github_api_method(self.githubapi.rate_limit)
+  File "/config/custom_components/hacs/base.py", line 504, in async_github_api_method
+    raise HacsException(_exception)
+custom_components.hacs.exceptions.HacsException: Request exception for 'https://api.github.com/rate_limit' with - Cannot connect to host api.github.com:443 ssl:default [Try again]
+2022-08-24 07:47:54 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xF4F1:1:0x0402]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>')]
+2022-08-24 07:47:55 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xF4F1:1:0x0001]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>')]
+2022-08-24 07:47:58 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xF4F1:1:0x0405]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_INVALID_REQUEST: 194>')]
+2022-08-24 07:49:13 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x367E:1:0x0001]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-08-24 07:49:13 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x367E:1:0x0402]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-08-24 07:49:13 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x367E:1:0x0405]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>'), DeliveryError('Request failed after 5 attempts: <Status.APS_NO_ACK: 183>')]
+2022-08-24 07:53:06 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xBC8E:1:0x0405]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-08-24 07:53:06 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xBC8E:1:0x0402]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-08-24 07:53:06 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xBC8E:1:0x0001]: async_initialize: all attempts have failed: [DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>'), DeliveryError('Request failed after 5 attempts: <Status.NWK_NO_ROUTE: 205>')]
+2022-08-24 09:19:02 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/app.5fef107e.js:230:5712 TypeError: null is not an object (evaluating 't.length')
+2022-08-24 09:46:19 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-24 09:46:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-24 09:46:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-24 09:46:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-24 22:50:34 ERROR (MainThread) [frontend.js.latest.202206010] :0:0 Script error.
+2022-08-25 09:45:29 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-25 09:45:29 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-25 20:52:24 ERROR (MainThread) [frontend.js.latest.202206010] :0:0 Script error.
+2022-08-26 03:07:09 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 03:07:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-26 03:07:19 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 09:38:44 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-26 09:38:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-26 09:40:32 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 09:40:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-26 09:45:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 09:45:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-26 12:39:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-26 12:41:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 12:41:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-26 14:20:48 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-08-26 14:20:48 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-08-26 22:32:18 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-26 22:54:38 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 22:54:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-26 23:16:08 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 23:16:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-26 23:16:18 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 23:21:51 WARNING (MainThread) [zigpy.zcl] [0x2BC6:1:0x0704] Unknown cluster command 1 b'\x00\x00\x90\x12\x12nn\x0cl`\x02\x0e\x02nr\x8e\x92\x92n\x0c\x0cb\x02l`\x02\x0er\x92\x92n\x0c\x0cb\x02l`\x02\x9crl\x8c\x8e|\xe0\x0cll\x9c\x0el\xfc'
+2022-08-26 23:22:16 WARNING (MainThread) [zigpy.zcl] [0x2BC6:1:0x0704] Unknown cluster command 1 b'\x00\x00\x90\x12\x12nn\x0cl`\x02\x0e\x02nr\x8e\x92\x92n\x0c\x0cb\x02l`\x02\x0er\x92\x92n\x0c\x0cb\x02l`\x02\x9crl\x8c\x8e|\xe0\x0cll\x9c\x0el\xfc'
+2022-08-26 23:57:56 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-26 23:57:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-27 00:39:52 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-27 00:39:59 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-27 00:41:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-27 00:41:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-27 01:58:27 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-27 01:58:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-27 09:42:33 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-27 10:48:35 ERROR (MainThread) [custom_components.hacs] <Integration peetereczek/ztm> GitHub returned 500 for https://api.github.com/repos/peetereczek/ztm
+2022-08-27 10:48:40 ERROR (MainThread) [custom_components.hacs] <Integration PiotrMachowski/Home-Assistant-custom-components-Rozkladzik> GitHub returned 500 for https://api.github.com/repos/PiotrMachowski/Home-Assistant-custom-components-Rozkladzik
+2022-08-27 10:52:52 ERROR (MainThread) [custom_components.hacs] <Integration dreed47/redfin> GitHub returned 500 for https://api.github.com/repos/dreed47/redfin
+2022-08-27 10:53:34 ERROR (MainThread) [custom_components.hacs] <Integration Aohzan/ipx800> GitHub returned 500 for https://api.github.com/repos/Aohzan/ipx800
+2022-08-27 10:56:00 ERROR (MainThread) [custom_components.hacs] <Appdaemon nickneos/Bring-Back-group.all_x> GitHub returned 500 for https://api.github.com/repos/nickneos/Bring-Back-group.all_x
+2022-08-27 11:35:46 INFO (MainThread) [zigpy_znp.zigbee.application] Permitting joins for 60 seconds
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.MgmtPermitJoinReq.Req(AddrMode=<AddrMode.Broadcast: 15>, Dst=0xFFFC, Duration=60, TCSignificance=0)
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MgmtPermitJoinReq.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MgmtPermitJoinRsp.Callback(Src=0x0000, Status=<Status.SUCCESS: 0>)
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x0000, IsBroadcast=<Bool.false: 0>, ClusterId=32822, SecurityUse=0, TSN=4, MacDst=0x0000, Data=b'\x00')
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.Broadcast: 15>, address=0xFFFC), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=54, TSN=28, Options=<TransmitOptions.NONE: 0>, Radius=0, Data=b'\x1C\x3C\x00')
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy.zdo] [0x0000:zdo] ZDO request ZDOCmd.Mgmt_Permit_Joining_rsp: [<Status.SUCCESS: 0>]
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy.zdo] [0x0000:zdo] No handler for ZDO request:ZDOCmd.Mgmt_Permit_Joining_rsp([<Status.SUCCESS: 0>])
+2022-08-27 11:35:46 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:35:49 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xD9F9](ZB-SW01): Device seen - marking the device available and resetting counter
+2022-08-27 11:35:49 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xD9F9](ZB-SW01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:35:50 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xD9F9](ZB-SW01): Device seen - marking the device available and resetting counter
+2022-08-27 11:35:50 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xD9F9](ZB-SW01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:35:50 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x367E](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:35:50 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x367E](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:35:53 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x44D5](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:35:53 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x44D5](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:35:56 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xBC8E](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:35:56 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xBC8E](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:35:56 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x36E5](TRADFRI on/off switch): last_seen is 43928.80697631836 seconds ago and ping attempts have been exhausted, marking the device unavailable
+2022-08-27 11:35:56 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x36E5](TRADFRI on/off switch): Update device availability -  device available: False - new availability: False - changed: False
+2022-08-27 11:35:56 DEBUG (MainThread) [zigpy_znp.api] Sending request: SYS.Ping.Req()
+2022-08-27 11:35:56 DEBUG (MainThread) [zigpy_znp.api] Received command: SYS.Ping.Rsp(Capabilities=<MTCapabilities.APP_CNF|GP|UTIL|ZDO|AF|SYS: 1625>)
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.SrcRtgInd.Callback(DstAddr=0x1E7C, Relays=[0xD9F9, 0x2BC6])
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1029, SrcAddr=0x1E7C, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=30, SecurityUse=<Bool.false: 0>, TimeStamp=823543, TSN=0, Data=b'\x18\x58\x0A\x00\x00\x21\xD5\x12', MacSrcAddr=0x2BC6, MsgResultRadius=27)
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy.zcl] [0x1E7C:1:0x0405] Received ZCL frame: b'\x18\x58\x0A\x00\x00\x21\xD5\x12'
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy.zcl] [0x1E7C:1:0x0405] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=88, command_id=10, *is_reply=True)
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy.zcl] [0x1E7C:1:0x0405] Decoded ZCL frame: RelativeHumidity:Report_Attributes(attribute_reports=[Attribute(attrid=0x0000, value=TypeValue(type=uint16_t, value=4821))])
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy.zcl] [0x1E7C:1:0x0405] Received command 0x0A (TSN 88): Report_Attributes(attribute_reports=[Attribute(attrid=0x0000, value=TypeValue(type=uint16_t, value=4821))])
+2022-08-27 11:35:57 DEBUG (MainThread) [zigpy.zcl] [0x1E7C:1:0x0405] Attribute report received: measured_value=4821
+2022-08-27 11:35:58 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x36E5](TRADFRI on/off switch): last_seen is 43930.610916376114 seconds ago and ping attempts have been exhausted, marking the device unavailable
+2022-08-27 11:35:58 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x36E5](TRADFRI on/off switch): Update device availability -  device available: False - new availability: False - changed: False
+2022-08-27 11:36:03 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x2BC6](UT-01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:03 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x2BC6](UT-01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:05 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xB304](ZB-SW01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:05 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xB304](ZB-SW01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:06 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:06 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:06 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xB304](ZB-SW01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:06 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xB304](ZB-SW01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:06 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x44D5](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:06 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x44D5](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:08 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:08 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:12 DEBUG (MainThread) [zigpy.application] Sending 'zdo_leave_req' failed: 
+2022-08-27 11:36:20 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xF4F1](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:20 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xF4F1](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:26 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x2BC6](UT-01): Device seen - marking the device available and resetting counter
+2022-08-27 11:36:26 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x2BC6](UT-01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:36:26 DEBUG (MainThread) [zigpy_znp.api] Sending request: SYS.Ping.Req()
+2022-08-27 11:36:26 DEBUG (MainThread) [zigpy_znp.api] Received command: SYS.Ping.Rsp(Capabilities=<MTCapabilities.APP_CNF|GP|UTIL|ZDO|AF|SYS: 1625>)
+2022-08-27 11:38:58 INFO (MainThread) [zigpy_znp.zigbee.application] Permitting joins for 60 seconds
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.MgmtPermitJoinReq.Req(AddrMode=<AddrMode.Broadcast: 15>, Dst=0xFFFC, Duration=60, TCSignificance=0)
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MgmtPermitJoinReq.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MgmtPermitJoinRsp.Callback(Src=0x0000, Status=<Status.SUCCESS: 0>)
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x0000, IsBroadcast=<Bool.false: 0>, ClusterId=32822, SecurityUse=0, TSN=6, MacDst=0x0000, Data=b'\x00')
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.Broadcast: 15>, address=0xFFFC), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=54, TSN=29, Options=<TransmitOptions.NONE: 0>, Radius=0, Data=b'\x1D\x3C\x00')
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy.zdo] [0x0000:zdo] ZDO request ZDOCmd.Mgmt_Permit_Joining_rsp: [<Status.SUCCESS: 0>]
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy.zdo] [0x0000:zdo] No handler for ZDO request:ZDOCmd.Mgmt_Permit_Joining_rsp([<Status.SUCCESS: 0>])
+2022-08-27 11:38:58 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:00 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xF4F1](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:00 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xF4F1](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:39:00 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.TCDevInd.Callback(SrcNwk=0x83CA, SrcIEEE=00:12:4b:00:25:1e:e2:c3, ParentNwk=0x0000)
+2022-08-27 11:39:00 INFO (MainThread) [zigpy_znp.zigbee.application] TC device join: ZDO.TCDevInd.Callback(SrcNwk=0x83CA, SrcIEEE=00:12:4b:00:25:1e:e2:c3, ParentNwk=0x0000)
+2022-08-27 11:39:00 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteDisc.Req(Dst=0x83CA, Options=<RouteDiscoveryOptions.UNICAST: 0>, Radius=30)
+2022-08-27 11:39:00 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteDisc.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:01 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xD9F9](ZB-SW01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:01 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xD9F9](ZB-SW01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:39:01 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x36E5](TRADFRI on/off switch): last_seen is 44113.614120960236 seconds ago and ping attempts have been exhausted, marking the device unavailable
+2022-08-27 11:39:01 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x36E5](TRADFRI on/off switch): Update device availability -  device available: False - new availability: False - changed: False
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.EndDeviceAnnceInd.Callback(Src=0x83CA, NWK=0x83CA, IEEE=00:12:4b:00:25:1e:e2:c3, Capabilities=<MACCapabilities.AllocateShortAddrDuringAssocNeeded: 128>)
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.true: 1>, ClusterId=19, SecurityUse=0, TSN=0, MacDst=0x0000, Data=b'\xCA\x83\xC3\xE2\x1E\x25\x00\x4B\x12\x00\x80')
+2022-08-27 11:39:01 INFO (MainThread) [zigpy_znp.zigbee.application] ZDO device announce: nwk=0x83CA, ieee=00:12:4b:00:25:1e:e2:c3, capabilities=128
+2022-08-27 11:39:01 INFO (MainThread) [zigpy.application] New device 0x83ca (00:12:4b:00:25:1e:e2:c3) joined the network
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy.device] [0x83ca] Scheduling initialization
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy.application] Received frame on uninitialized device <Device model=None manuf=None nwk=0x83CA ieee=00:12:4b:00:25:1e:e2:c3 is_initialized=False> from ep 0 to ep 0, cluster 19: b'\x00\xca\x83\xc3\xe2\x1e%\x00K\x12\x00\x80'
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy.zdo] [0x83ca:zdo] ZDO request ZDOCmd.Device_annce: [0x83CA, 00:12:4b:00:25:1e:e2:c3, 128]
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy.util] Tries remaining: 3
+2022-08-27 11:39:01 INFO (MainThread) [zigpy.device] [0x83ca] Requesting 'Node Descriptor'
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy.util] Tries remaining: 2
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x1e request
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteChk.Req(Dst=0x83CA, RtStatus=<RouteStatus.ACTIVE: 1>, Options=<RouteOptions.NO_ROUTE_CACHE|MTO_ROUTE: 3>)
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteChk.Rsp(Status=<RoutingStatus.SUCCESS: 0>)
+2022-08-27 11:39:01 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=2, TSN=30, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x1E\xCA\x83')
+2022-08-27 11:39:02 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:02 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:02 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.NodeDescRsp.Callback(Src=0x83CA, Status=<Status.SUCCESS: 0>, NWK=0x83CA, NodeDescriptor=NullableNodeDescriptor(logical_type=<LogicalType.EndDevice: 2>, complex_descriptor_available=0, user_descriptor_available=0, reserved=0, aps_flags=0, frequency_band=<FrequencyBand.Freq2400MHz: 8>, mac_capability_flags=<MACCapabilityFlags.AllocateAddress: 128>, manufacturer_code=0, maximum_buffer_size=80, maximum_incoming_transfer_size=160, server_mask=0, maximum_outgoing_transfer_size=160, descriptor_capability_field=<DescriptorCapability.NONE: 0>, *allocate_address=True, *is_alternate_pan_coordinator=False, *is_coordinator=False, *is_end_device=True, *is_full_function_device=False, *is_mains_powered=False, *is_receiver_on_when_idle=False, *is_router=False, *is_security_capable=False))
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.false: 0>, ClusterId=32770, SecurityUse=0, TSN=30, MacDst=0x0000, Data=b'\x00\xCA\x83\x02\x40\x80\x00\x00\x50\xA0\x00\x00\x00\xA0\x00\x00')
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy.application] Received frame on uninitialized device <Device model=None manuf=None nwk=0x83CA ieee=00:12:4b:00:25:1e:e2:c3 is_initialized=False> from ep 0 to ep 0, cluster 32770: b'\x1e\x00\xca\x83\x02@\x80\x00\x00P\xa0\x00\x00\x00\xa0\x00\x00'
+2022-08-27 11:39:03 INFO (MainThread) [zigpy.device] [0x83ca] Got Node Descriptor: NodeDescriptor(logical_type=<LogicalType.EndDevice: 2>, complex_descriptor_available=0, user_descriptor_available=0, reserved=0, aps_flags=0, frequency_band=<FrequencyBand.Freq2400MHz: 8>, mac_capability_flags=<MACCapabilityFlags.AllocateAddress: 128>, manufacturer_code=0, maximum_buffer_size=80, maximum_incoming_transfer_size=160, server_mask=0, maximum_outgoing_transfer_size=160, descriptor_capability_field=<DescriptorCapability.NONE: 0>, *allocate_address=True, *is_alternate_pan_coordinator=False, *is_coordinator=False, *is_end_device=True, *is_full_function_device=False, *is_mains_powered=False, *is_receiver_on_when_idle=False, *is_router=False, *is_security_capable=False)
+2022-08-27 11:39:03 INFO (MainThread) [zigpy.device] [0x83ca] Discovering endpoints
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy.util] Tries remaining: 3
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x1f request
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteChk.Req(Dst=0x83CA, RtStatus=<RouteStatus.ACTIVE: 1>, Options=<RouteOptions.NO_ROUTE_CACHE|MTO_ROUTE: 3>)
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteChk.Rsp(Status=<RoutingStatus.SUCCESS: 0>)
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=5, TSN=31, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x1F\xCA\x83')
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ActiveEpRsp.Callback(Src=0x83CA, Status=<Status.SUCCESS: 0>, NWK=0x83CA, ActiveEndpoints=[1])
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.false: 0>, ClusterId=32773, SecurityUse=0, TSN=31, MacDst=0x0000, Data=b'\x00\xCA\x83\x01\x01')
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy.application] Received frame on uninitialized device <Device model=None manuf=None nwk=0x83CA ieee=00:12:4b:00:25:1e:e2:c3 is_initialized=False> from ep 0 to ep 0, cluster 32773: b'\x1f\x00\xca\x83\x01\x01'
+2022-08-27 11:39:03 INFO (MainThread) [zigpy.device] [0x83ca] Discovered endpoints: [1]
+2022-08-27 11:39:03 INFO (MainThread) [zigpy.device] [0x83ca] Initializing endpoints [<Endpoint id=1 in=[] out=[] status=<Status.NEW: 0>>]
+2022-08-27 11:39:03 INFO (MainThread) [zigpy.endpoint] [0x83ca:1] Discovering endpoint information
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy.util] Tries remaining: 3
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x20 request
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteChk.Req(Dst=0x83CA, RtStatus=<RouteStatus.ACTIVE: 1>, Options=<RouteOptions.NO_ROUTE_CACHE|MTO_ROUTE: 3>)
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteChk.Rsp(Status=<RoutingStatus.SUCCESS: 0>)
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=4, TSN=32, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x20\xCA\x83\x01')
+2022-08-27 11:39:03 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.SimpleDescRsp.Callback(Src=0x83CA, Status=<Status.SUCCESS: 0>, NWK=0x83CA, SimpleDescriptor=SizePrefixedSimpleDescriptor(endpoint=1, profile=260, device_type=770, device_version=0, input_clusters=[0, 3, 1026, 1029, 1], output_clusters=[3]))
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.false: 0>, ClusterId=32772, SecurityUse=0, TSN=32, MacDst=0x0000, Data=b'\x00\xCA\x83\x14\x01\x04\x01\x02\x03\x00\x05\x00\x00\x03\x00\x02\x04\x05\x04\x01\x00\x01\x03\x00')
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.application] Received frame on uninitialized device <Device model=None manuf=None nwk=0x83CA ieee=00:12:4b:00:25:1e:e2:c3 is_initialized=False> from ep 0 to ep 0, cluster 32772: b' \x00\xca\x83\x14\x01\x04\x01\x02\x03\x00\x05\x00\x00\x03\x00\x02\x04\x05\x04\x01\x00\x01\x03\x00'
+2022-08-27 11:39:04 INFO (MainThread) [zigpy.endpoint] [0x83ca:1] Discovered endpoint information: SizePrefixedSimpleDescriptor(endpoint=1, profile=260, device_type=770, device_version=0, input_clusters=[0, 3, 1026, 1029, 1], output_clusters=[3])
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0000] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=33, command_id=<GeneralCommand.Read_Attributes: 0>, *is_reply=False)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0000] Sending request: Read_Attributes(attribute_ids=[4, 5])
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x21 request
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=0, TSN=33, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x21\x00\x04\x00\x05\x00')
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=33)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=0, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=57, SecurityUse=<Bool.false: 0>, TimeStamp=12506993, TSN=0, Data=b'\x18\x21\x01\x04\x00\x00\x42\x07\x65\x57\x65\x4C\x69\x6E\x6B\x05\x00\x00\x42\x04\x54\x48\x30\x31', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0000] Received ZCL frame: b'\x18\x21\x01\x04\x00\x00\x42\x07\x65\x57\x65\x4C\x69\x6E\x6B\x05\x00\x00\x42\x04\x54\x48\x30\x31'
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0000] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=33, command_id=1, *is_reply=True)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0000] Decoded ZCL frame: Basic:Read_Attributes_rsp(status_records=[ReadAttributeRecord(attrid=0x0004, status=<Status.SUCCESS: 0>, value=TypeValue(type=CharacterString, value='eWeLink')), ReadAttributeRecord(attrid=0x0005, status=<Status.SUCCESS: 0>, value=TypeValue(type=CharacterString, value='TH01'))])
+2022-08-27 11:39:04 INFO (MainThread) [zigpy.device] [0x83ca] Read model 'TH01' and manufacturer 'eWeLink' from <Endpoint id=1 in=[basic:0x0000, identify:0x0003, temperature:0x0402, humidity:0x0405, power:0x0001] out=[identify:0x0003] status=<Status.ZDO_INIT: 1>>
+2022-08-27 11:39:04 INFO (MainThread) [zigpy.device] [0x83ca] Discovered basic device information for <Device model='TH01' manuf='eWeLink' nwk=0x83CA ieee=00:12:4b:00:25:1e:e2:c3 is_initialized=True>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.application] Device is initialized <Device model='TH01' manuf='eWeLink' nwk=0x83CA ieee=00:12:4b:00:25:1e:e2:c3 is_initialized=True>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Checking quirks for eWeLink TH01 (00:12:4b:00:25:1e:e2:c3)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'zhaquirks.xbee.xbee_io.XBeeSensor'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because endpoint list mismatch: {232, 230} {1}
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'zhaquirks.xbee.xbee3_io.XBee3Sensor'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because endpoint list mismatch: {232, 230} {1}
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'zhaquirks.smartthings.tag_v4.SmartThingsTagV4'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because device_type mismatch on at least one endpoint
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'zhaquirks.smartthings.multi.SmartthingsMultiPurposeSensor'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because device_type mismatch on at least one endpoint
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'zhaquirks.netvox.z308e3ed.Z308E3ED'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because device_type mismatch on at least one endpoint
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'zhaquirks.gledopto.soposhgu10.SoposhGU10'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because endpoint list mismatch: {11, 13} {1}
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Considering <class 'bellows.zigbee.application.EZSPCoordinator'>
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.quirks.registry] Fail because device_type mismatch on at least one endpoint
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.discovery] 'button' component -> 'ZHAIdentifyButton' using ['identify']
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.discovery] 'sensor' component -> 'Battery' using ['power']
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.discovery] 'sensor' component -> 'Temperature' using ['temperature']
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.discovery] 'sensor' component -> 'RSSISensor' using ['basic']
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.discovery] 'sensor' component -> 'LQISensor' using ['basic']
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.discovery] 'sensor' component -> 'Humidity' using ['humidity']
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.gateway] device - 0x83CA:00:12:4b:00:25:1e:e2:c3 entering async_device_initialized - is_new_join: True
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.gateway] device - 0x83CA:00:12:4b:00:25:1e:e2:c3 has joined the ZHA zigbee network
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x83CA](TH01): started configuration
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:ZDO](TH01): 'async_configure' stage succeeded
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0000]: Configuring cluster attribute reporting
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0000]: finished channel configuration
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: Performing cluster binding
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x22 request
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteChk.Req(Dst=0x83CA, RtStatus=<RouteStatus.ACTIVE: 1>, Options=<RouteOptions.NO_ROUTE_CACHE|MTO_ROUTE: 3>)
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: Configuring cluster attribute reporting
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: finished channel configuration
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: Performing cluster binding
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x23 request
+2022-08-27 11:39:04 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: Performing cluster binding
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x24 request
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.appdb] Error handling '_save_attribute' event with (00:12:4b:00:25:1e:e2:c3, 1, 0, 4, 'eWeLink') params: FOREIGN KEY constraint failed
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy.appdb] Error handling '_save_attribute' event with (00:12:4b:00:25:1e:e2:c3, 1, 0, 5, 'TH01') params: FOREIGN KEY constraint failed
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteChk.Rsp(Status=<RoutingStatus.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteChk.Req(Dst=0x83CA, RtStatus=<RouteStatus.ACTIVE: 1>, Options=<RouteOptions.NO_ROUTE_CACHE|MTO_ROUTE: 3>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteChk.Rsp(Status=<RoutingStatus.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: ZDO.ExtRouteChk.Req(Dst=0x83CA, RtStatus=<RouteStatus.ACTIVE: 1>, Options=<RouteOptions.NO_ROUTE_CACHE|MTO_ROUTE: 3>)
+2022-08-27 11:39:04 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.ExtRouteChk.Rsp(Status=<RoutingStatus.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=33, TSN=34, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x22\xC3\xE2\x1E\x25\x00\x4B\x12\x00\x01\x05\x04\x03\x46\xC4\xC8\x24\x00\x4B\x12\x00\x01')
+2022-08-27 11:39:04 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=33, TSN=35, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x23\xC3\xE2\x1E\x25\x00\x4B\x12\x00\x01\x01\x00\x03\x46\xC4\xC8\x24\x00\x4B\x12\x00\x01')
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=0, DstPanId=0x0000, SrcEndpoint=0, ClusterId=33, TSN=36, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x24\xC3\xE2\x1E\x25\x00\x4B\x12\x00\x01\x02\x04\x03\x46\xC4\xC8\x24\x00\x4B\x12\x00\x01')
+2022-08-27 11:39:04 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.BindRsp.Callback(Src=0x83CA, Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.false: 0>, ClusterId=32801, SecurityUse=0, TSN=34, MacDst=0x0000, Data=b'\x00')
+2022-08-27 11:39:05 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: bound 'humidity' cluster: Status.SUCCESS
+2022-08-27 11:39:05 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: Configuring cluster attribute reporting
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=37, command_id=<GeneralCommand.Configure_Reporting: 6>, *is_reply=False)
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Sending request: Configure_Reporting(config_records=[AttributeReportingConfig(direction=0, attrid=0x0000, datatype=33, min_interval=30, max_interval=900, reportable_change=100)])
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x25 request
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1029, TSN=37, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x25\x06\x00\x00\x00\x21\x1E\x00\x84\x03\x64\x00')
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:05 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.BindRsp.Callback(Src=0x83CA, Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.false: 0>, ClusterId=32801, SecurityUse=0, TSN=35, MacDst=0x0000, Data=b'\x00')
+2022-08-27 11:39:05 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: bound 'power' cluster: Status.SUCCESS
+2022-08-27 11:39:05 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: Configuring cluster attribute reporting
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=38, command_id=<GeneralCommand.Configure_Reporting: 6>, *is_reply=False)
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Sending request: Configure_Reporting(config_records=[AttributeReportingConfig(direction=0, attrid=0x0020, datatype=32, min_interval=3600, max_interval=10800, reportable_change=1), AttributeReportingConfig(direction=0, attrid=0x0021, datatype=32, min_interval=3600, max_interval=10800, reportable_change=1)])
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x26 request
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1, TSN=38, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x26\x06\x00\x20\x00\x20\x10\x0E\x30\x2A\x01\x00\x21\x00\x20\x10\x0E\x30\x2A\x01')
+2022-08-27 11:39:05 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:05 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.BindRsp.Callback(Src=0x83CA, Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy_znp.api] Command was not handled
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy_znp.api] Received command: ZDO.MsgCbIncoming.Callback(Src=0x83CA, IsBroadcast=<Bool.false: 0>, ClusterId=32801, SecurityUse=0, TSN=36, MacDst=0x0000, Data=b'\x00')
+2022-08-27 11:39:06 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: bound 'temperature' cluster: Status.SUCCESS
+2022-08-27 11:39:06 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: Configuring cluster attribute reporting
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=39, command_id=<GeneralCommand.Configure_Reporting: 6>, *is_reply=False)
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Sending request: Configure_Reporting(config_records=[AttributeReportingConfig(direction=0, attrid=0x0000, datatype=41, min_interval=30, max_interval=900, reportable_change=50)])
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x27 request
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1026, TSN=39, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x27\x06\x00\x00\x00\x29\x1E\x00\x84\x03\x32\x00')
+2022-08-27 11:39:06 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:06 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=37)
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1029, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=57, SecurityUse=<Bool.false: 0>, TimeStamp=12665945, TSN=0, Data=b'\x18\x25\x07\x00', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Received ZCL frame: b'\x18\x25\x07\x00'
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=37, command_id=7, *is_reply=True)
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Decoded ZCL frame: RelativeHumidity:Configure_Reporting_rsp(status_records=[ConfigureReportingResponseRecord(status=0)])
+2022-08-27 11:39:07 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: Successfully configured reporting for '{'measured_value': (30, 900, 100)}' on 'humidity' cluster: [ConfigureReportingResponseRecord(status=0)]
+2022-08-27 11:39:07 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: finished channel configuration
+2022-08-27 11:39:07 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=38)
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=60, SecurityUse=<Bool.false: 0>, TimeStamp=12700577, TSN=0, Data=b'\x18\x26\x07\x00', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Received ZCL frame: b'\x18\x26\x07\x00'
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=38, command_id=7, *is_reply=True)
+2022-08-27 11:39:07 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Decoded ZCL frame: PowerConfiguration:Configure_Reporting_rsp(status_records=[ConfigureReportingResponseRecord(status=0)])
+2022-08-27 11:39:07 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: Successfully configured reporting for '{'battery_voltage': (3600, 10800, 1), 'battery_percentage_remaining': (3600, 10800, 1)}' on 'power' cluster: [ConfigureReportingResponseRecord(status=0)]
+2022-08-27 11:39:07 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: finished channel configuration
+2022-08-27 11:39:07 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=39)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1026, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=54, SecurityUse=<Bool.false: 0>, TimeStamp=12735019, TSN=0, Data=b'\x18\x27\x07\x00', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Received ZCL frame: b'\x18\x27\x07\x00'
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=39, command_id=7, *is_reply=True)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Decoded ZCL frame: TemperatureMeasurement:Configure_Reporting_rsp(status_records=[ConfigureReportingResponseRecord(status=0)])
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: Successfully configured reporting for '{'measured_value': (30, 900, 50)}' on 'temperature' cluster: [ConfigureReportingResponseRecord(status=0)]
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: finished channel configuration
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0000]: 'async_configure' stage succeeded
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: 'async_configure' stage succeeded
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: 'async_configure' stage succeeded
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: 'async_configure' stage succeeded
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: 'async_configure' stage succeeded
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x83CA](TH01): completed configuration
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x83CA](TH01): stored in registry: ZhaDeviceEntry(name='eWeLink TH01', ieee='00:12:4b:00:25:1e:e2:c3', last_seen=1661589548.375797)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0003] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.CLUSTER_COMMAND: 1>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=True, *is_general=False), tsn=40, command_id=64, *is_reply=False)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0003] Sending request: trigger_effect(effect_id=<EffectIdentifier.Okay: 2>, effect_variant=<EffectVariant.Default: 0>)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x28 request
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=3, TSN=40, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x01\x28\x40\x02\x00')
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:08 ERROR (MainThread) [frontend.js.latest.202206010] https://homeassistant.alexica.ro/frontend_latest/4eea4eb9.js:248:519 Uncaught TypeError: Cannot read properties of undefined (reading 'get')
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=40)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=3, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=63, SecurityUse=<Bool.false: 0>, TimeStamp=12769150, TSN=0, Data=b'\x18\x28\x0B\x40\x81', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0003] Received ZCL frame: b'\x18\x28\x0B\x40\x81'
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0003] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=40, command_id=11, *is_reply=True)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0003] Decoded ZCL frame: Identify:Default_Response(command_id=64, status=<Status.UNSUP_CLUSTER_COMMAND: 129>)
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: executed 'trigger_effect' command with args: '(2, 0)' kwargs: '{}' result: Default_Response(command_id=64, status=<Status.UNSUP_CLUSTER_COMMAND: 129>)
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x83CA](TH01): started initialization
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:ZDO](TH01): 'async_initialize' stage succeeded
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0000]: initializing channel: from_cache: False
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0000]: finished channel initialization
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: initializing channel: from_cache: False
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: initializing uncached channel attributes: ['measured_value'] - from cache[False]
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: Reading attributes in chunks: ['measured_value']
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=41, command_id=<GeneralCommand.Read_Attributes: 0>, *is_reply=False)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Sending request: Read_Attributes(attribute_ids=[0])
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x29 request
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: initializing channel: from_cache: False
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: finished channel initialization
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: initializing channel: from_cache: False
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: initializing uncached channel attributes: ['battery_voltage', 'battery_percentage_remaining'] - from cache[False]
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: Reading attributes in chunks: ['battery_voltage', 'battery_percentage_remaining']
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=42, command_id=<GeneralCommand.Read_Attributes: 0>, *is_reply=False)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Sending request: Read_Attributes(attribute_ids=[32, 33])
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x2a request
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: initializing channel: from_cache: False
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: initializing uncached channel attributes: ['measured_value'] - from cache[False]
+2022-08-27 11:39:08 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: Reading attributes in chunks: ['measured_value']
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=43, command_id=<GeneralCommand.Read_Attributes: 0>, *is_reply=False)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Sending request: Read_Attributes(attribute_ids=[0])
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x2b request
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1029, TSN=41, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x29\x00\x00\x00')
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1, TSN=42, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x2A\x00\x20\x00\x21\x00')
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1026, TSN=43, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x2B\x00\x00\x00')
+2022-08-27 11:39:08 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:09 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=41)
+2022-08-27 11:39:09 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1029, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=63, SecurityUse=<Bool.false: 0>, TimeStamp=12803360, TSN=0, Data=b'\x18\x29\x01\x00\x00\x00\x29\x2A\x0F', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:09 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Received ZCL frame: b'\x18\x29\x01\x00\x00\x00\x29\x2A\x0F'
+2022-08-27 11:39:09 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=41, command_id=1, *is_reply=True)
+2022-08-27 11:39:09 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Decoded ZCL frame: RelativeHumidity:Read_Attributes_rsp(status_records=[ReadAttributeRecord(attrid=0x0000, status=<Status.SUCCESS: 0>, value=TypeValue(type=int16s, value=3882))])
+2022-08-27 11:39:09 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: finished channel initialization
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=42)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=54, SecurityUse=<Bool.false: 0>, TimeStamp=12837514, TSN=0, Data=b'\x18\x2A\x01\x20\x00\x00\x20\x19\x21\x00\x00\x20\x00', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Received ZCL frame: b'\x18\x2A\x01\x20\x00\x00\x20\x19\x21\x00\x00\x20\x00'
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=42, command_id=1, *is_reply=True)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Decoded ZCL frame: PowerConfiguration:Read_Attributes_rsp(status_records=[ReadAttributeRecord(attrid=0x0020, status=<Status.SUCCESS: 0>, value=TypeValue(type=uint8_t, value=25)), ReadAttributeRecord(attrid=0x0021, status=<Status.SUCCESS: 0>, value=TypeValue(type=uint8_t, value=0))])
+2022-08-27 11:39:10 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: Performing channel specific initialization: ['battery_voltage', 'battery_percentage_remaining']
+2022-08-27 11:39:10 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: Reading attributes in chunks: ['battery_size', 'battery_quantity']
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Sending request header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=False, is_reply=0, disable_default_response=0, reserved=0, *is_cluster=False, *is_general=True), tsn=44, command_id=<GeneralCommand.Read_Attributes: 0>, *is_reply=False)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Sending request: Read_Attributes(attribute_ids=[49, 51])
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.device] [0x83ca] Extending timeout for 0x2c request
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy_znp.api] Sending request: AF.DataRequestExt.Req(DstAddrModeAddress=AddrModeAddress(mode=<AddrMode.NWK: 2>, address=0x83CA), DstEndpoint=1, DstPanId=0x0000, SrcEndpoint=1, ClusterId=1, TSN=44, Options=<TransmitOptions.SUPPRESS_ROUTE_DISC_NETWORK|ACK_REQUEST: 48>, Radius=30, Data=b'\x00\x2C\x00\x31\x00\x33\x00')
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataRequestExt.Rsp(Status=<Status.SUCCESS: 0>)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=43)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1026, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=57, SecurityUse=<Bool.false: 0>, TimeStamp=12871849, TSN=0, Data=b'\x18\x2B\x01\x00\x00\x00\x29\x49\x0D', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Received ZCL frame: b'\x18\x2B\x01\x00\x00\x00\x29\x49\x0D'
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=43, command_id=1, *is_reply=True)
+2022-08-27 11:39:10 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Decoded ZCL frame: TemperatureMeasurement:Read_Attributes_rsp(status_records=[ReadAttributeRecord(attrid=0x0000, status=<Status.SUCCESS: 0>, value=TypeValue(type=int16s, value=3401))])
+2022-08-27 11:39:10 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: finished channel initialization
+2022-08-27 11:39:11 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.DataConfirm.Callback(Status=<Status.SUCCESS: 0>, Endpoint=1, TSN=44)
+2022-08-27 11:39:11 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=60, SecurityUse=<Bool.false: 0>, TimeStamp=12906023, TSN=0, Data=b'\x18\x2C\x01\x31\x00\x86\x33\x00\x86', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:11 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Received ZCL frame: b'\x18\x2C\x01\x31\x00\x86\x33\x00\x86'
+2022-08-27 11:39:11 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=44, command_id=1, *is_reply=True)
+2022-08-27 11:39:11 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0001] Decoded ZCL frame: PowerConfiguration:Read_Attributes_rsp(status_records=[ReadAttributeRecord(attrid=0x0031, status=<Status.UNSUPPORTED_ATTRIBUTE: 134>), ReadAttributeRecord(attrid=0x0033, status=<Status.UNSUPPORTED_ATTRIBUTE: 134>)])
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: finished channel initialization
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0000]: 'async_initialize' stage succeeded
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0405]: 'async_initialize' stage succeeded
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0003]: 'async_initialize' stage succeeded
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0001]: 'async_initialize' stage succeeded
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.channels.base] [0x83CA:1:0x0402]: 'async_initialize' stage succeeded
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x83CA](TH01): power source: Battery or Unknown
+2022-08-27 11:39:11 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x83CA](TH01): completed initialization
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1026, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=63, SecurityUse=<Bool.false: 0>, TimeStamp=12979697, TSN=0, Data=b'\x18\x00\x0A\x00\x00\x29\x39\x0D', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Received ZCL frame: b'\x18\x00\x0A\x00\x00\x29\x39\x0D'
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=0, command_id=10, *is_reply=True)
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Decoded ZCL frame: TemperatureMeasurement:Report_Attributes(attribute_reports=[Attribute(attrid=0x0000, value=TypeValue(type=int16s, value=3385))])
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Received command 0x0A (TSN 0): Report_Attributes(attribute_reports=[Attribute(attrid=0x0000, value=TypeValue(type=int16s, value=3385))])
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0402] Attribute report received: measured_value=3385
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy_znp.api] Received command: AF.IncomingMsg.Callback(GroupId=0x0000, ClusterId=1029, SrcAddr=0x83CA, SrcEndpoint=1, DstEndpoint=1, WasBroadcast=<Bool.false: 0>, LQI=63, SecurityUse=<Bool.false: 0>, TimeStamp=12980487, TSN=0, Data=b'\x18\x01\x0A\x00\x00\x21\xD6\x0E', MacSrcAddr=0x83CA, MsgResultRadius=29)
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Received ZCL frame: b'\x18\x01\x0A\x00\x00\x21\xD6\x0E'
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Decoded ZCL frame header: ZCLHeader(frame_control=FrameControl(frame_type=<FrameType.GLOBAL_COMMAND: 0>, is_manufacturer_specific=0, is_reply=1, disable_default_response=1, reserved=0, *is_cluster=False, *is_general=True), tsn=1, command_id=10, *is_reply=True)
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Decoded ZCL frame: RelativeHumidity:Report_Attributes(attribute_reports=[Attribute(attrid=0x0000, value=TypeValue(type=uint16_t, value=3798))])
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Received command 0x0A (TSN 1): Report_Attributes(attribute_reports=[Attribute(attrid=0x0000, value=TypeValue(type=uint16_t, value=3798))])
+2022-08-27 11:39:12 DEBUG (MainThread) [zigpy.zcl] [0x83CA:1:0x0405] Attribute report received: measured_value=3798
+2022-08-27 11:39:15 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:15 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x8BA1](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:39:20 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xBC8E](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:20 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xBC8E](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:39:21 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xB304](ZB-SW01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:21 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0xB304](ZB-SW01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:39:21 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x44D5](TH01): Device seen - marking the device available and resetting counter
+2022-08-27 11:39:21 DEBUG (MainThread) [homeassistant.components.zha.core.device] [0x44D5](TH01): Update device availability -  device available: True - new availability: True - changed: False
+2022-08-27 11:59:29 WARNING (MainThread) [zigpy.appdb] Discarding _save_device_last_seen event
+2022-08-27 11:59:29 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/site-packages/zigpy/topology.py", line 52, in scan_loop
+    await self.scan()
+  File "/usr/lib/python3.9/site-packages/zigpy/topology.py", line 63, in scan
+    await self._scan_task
+  File "/usr/lib/python3.9/site-packages/zigpy/topology.py", line 86, in _scan
+    await device.neighbors.scan()
+  File "/usr/lib/python3.9/site-packages/zigpy/neighbor.py", line 96, in scan
+    return await self._scan()
+  File "/usr/lib/python3.9/site-packages/zigpy/neighbor.py", line 107, in _scan
+    status, rsp = await self._device.zdo.Mgmt_Lqi_req(idx, tries=3, delay=1)
+  File "/usr/lib/python3.9/site-packages/zigpy/util.py", line 114, in retry
+    r = await func()
+  File "/usr/lib/python3.9/site-packages/zigpy/device.py", line 293, in request
+    radio_result, msg = await self._application.request(
+  File "/usr/lib/python3.9/site-packages/zigpy_znp/zigbee/application.py", line 439, in request
+    return await self._send_request(
+  File "/usr/lib/python3.9/site-packages/zigpy_znp/zigbee/application.py", line 1401, in _send_request
+    response = await self._send_request_raw(
+  File "/usr/lib/python3.9/site-packages/zigpy_znp/zigbee/application.py", line 1279, in _send_request_raw
+    response = await self._znp.request(
+AttributeError: 'NoneType' object has no attribute 'request'
+2022-08-27 16:15:11 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-08-27 16:15:11 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-08-27 17:25:21 WARNING (MainThread) [homeassistant.components.gree.bridge] Device is unavailable: gree-c6a46f45 (Device: c6a46f45 @ 192.168.1.40:7000 (mac: 502cc6a46f45))
+2022-08-27 17:25:21 ERROR (MainThread) [homeassistant.components.gree.bridge] Error fetching gree-c6a46f45 data: Device gree-c6a46f45 is unavailable
+2022-08-27 18:35:57 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-27 18:35:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-28 00:39:50 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-28 00:41:39 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 00:41:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-28 01:58:28 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 01:58:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-28 03:21:09 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 03:21:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-28 05:22:30 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 05:22:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.samsung_6_series_55 is taking over 10 seconds
+2022-08-28 10:38:54 WARNING (MainThread) [async_upnp_client.profiles.profile] Failed subscribing to service: UpnpConnectionError('ClientConnectorError(ConnectionKey(host=\'192.168.1.66\', port=9197, is_ssl=False, ssl=None, proxy=None, proxy_auth=None, proxy_headers_hash=8557405128742632872), ConnectionRefusedError(111, "Connect call failed (\'192.168.1.66\', 9197)"))', None)
+2022-08-28 10:40:44 WARNING (MainThread) [homeassistant.components.media_player] Updating samsungtv media_player took longer than the scheduled update interval 0:00:10
+2022-08-28 10:40:44 WARNING (MainThread) [homeassistant.helpers.entity] Update of media_player.ue50j6282 is taking over 10 seconds
+2022-08-28 11:17:24 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration sonoff which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:17:24 WARNING (SyncWorker_7) [homeassistant.loader] We found a custom integration asusrouter which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:17:24 WARNING (SyncWorker_6) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-08-28 11:17:24 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration frigate which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant

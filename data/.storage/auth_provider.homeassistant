@@ -1,0 +1,17 @@
+{
+    "version": 1,
+    "minor_version": 1,
+    "key": "auth_provider.homeassistant",
+    "data": {
+        "users": [
+            {
+                "username": "alexica",
+                "password": "JDJiJDEyJG1pOGF3dmFPYUNUbUtTS1RyTXgwZWVZWXJIbHF2TFEvVTBXamxQYUNCY0hDY0NPWFU3djAu"
+            },
+            {
+                "username": "ceci",
+                "password": "JDJiJDEyJDFGdi9hQWhQdEZSZzd5U2R5cmhFVy5vQklMdTFKbFJZOWxkaFFkSXUuaklNTWVJYUhDNGcy"
+            }
+        ]
+    }
+}
