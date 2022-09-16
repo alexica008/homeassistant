@@ -10,23 +10,23 @@
                 "attributes": {
                     "editable": false,
                     "id": "alexica",
-                    "latitude": 44.4365234375,
-                    "longitude": 26.042911286248618,
-                    "gps_accuracy": 14.2690480284468,
+                    "latitude": 44.43668566280903,
+                    "longitude": 26.044304589115747,
+                    "gps_accuracy": 35,
                     "source": "device_tracker.catalins_iphone",
                     "user_id": "17489d9724ce4fdf83bd967cdcfe83c1",
                     "friendly_name": "alexica"
                 },
                 "last_changed": "2022-09-10T14:21:08.622939+00:00",
-                "last_updated": "2022-09-16T15:11:40.478633+00:00",
+                "last_updated": "2022-09-16T16:46:09.249023+00:00",
                 "context": {
-                    "id": "01GD3DNZDYJFZ19KRQ8G52QDNT",
+                    "id": "01GD3K2ZB12WSD2PFAVMEN9B6P",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -47,7 +47,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -69,7 +69,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -91,7 +91,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -113,7 +113,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -135,7 +135,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -157,7 +157,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -179,7 +179,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -201,7 +201,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -223,7 +223,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -245,7 +245,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -265,7 +265,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -284,7 +284,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -303,7 +303,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -325,7 +325,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -344,7 +344,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -363,7 +363,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -382,12 +382,12 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.gm1913_battery_temperature",
-                "state": "29.0",
+                "state": "27.9",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "\u00b0C",
@@ -395,16 +395,16 @@
                     "icon": "mdi:battery",
                     "friendly_name": "GM1913 Battery Temperature"
                 },
-                "last_changed": "2022-09-16T16:20:16.466302+00:00",
-                "last_updated": "2022-09-16T16:20:16.466302+00:00",
+                "last_changed": "2022-09-16T16:35:54.948890+00:00",
+                "last_updated": "2022-09-16T16:35:54.948890+00:00",
                 "context": {
-                    "id": "01GD3HKJYJA9YQ7G5Q03FAYFJ7",
+                    "id": "01GD3JG7E4K62D17R45BRESJBV",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -428,7 +428,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -449,7 +449,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -469,7 +469,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -493,7 +493,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -512,7 +512,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -531,7 +531,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -550,7 +550,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -576,7 +576,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -595,7 +595,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -614,7 +614,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -637,7 +637,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -657,7 +657,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -677,7 +677,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -697,7 +697,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -717,7 +717,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -737,7 +737,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -760,7 +760,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -780,7 +780,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -800,7 +800,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -820,7 +820,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -840,7 +840,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -860,28 +860,28 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.catalins_iphone_battery_level",
-                "state": "57",
+                "state": "64",
                 "attributes": {
                     "unit_of_measurement": "%",
                     "device_class": "battery",
-                    "icon": "mdi:battery-charging-40",
+                    "icon": "mdi:battery-charging-60",
                     "friendly_name": "Catalin\u2019s iPhone Battery Level"
                 },
-                "last_changed": "2022-09-16T16:31:50.035445+00:00",
-                "last_updated": "2022-09-16T16:31:50.035445+00:00",
+                "last_changed": "2022-09-16T16:46:09.262453+00:00",
+                "last_updated": "2022-09-16T16:46:09.262453+00:00",
                 "context": {
-                    "id": "01GD3J8R8KABA8JTFX61CK04FS",
+                    "id": "01GD3K2ZBE9TYQ1TCEA5H7WDNW",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -889,43 +889,43 @@
                 "state": "Charging",
                 "attributes": {
                     "Low Power Mode": false,
-                    "icon": "mdi:battery-charging-40",
+                    "icon": "mdi:battery-charging-60",
                     "friendly_name": "Catalin\u2019s iPhone Battery State"
                 },
                 "last_changed": "2022-09-16T16:10:44.755938+00:00",
-                "last_updated": "2022-09-16T16:10:44.755938+00:00",
+                "last_updated": "2022-09-16T16:41:50.766724+00:00",
                 "context": {
-                    "id": "01GD3H24MKVDJENEGZW4EXRRA9",
+                    "id": "01GD3JV2XE3Q5CA9EG2T2DJFQF",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.catalins_iphone_storage",
                 "state": "76.79",
                 "attributes": {
-                    "Available": "186,99 GB",
-                    "Available (Important)": "204,21 GB",
-                    "Available (Opportunistic)": "196,49 GB",
+                    "Available": "186,98 GB",
+                    "Available (Important)": "204,20 GB",
+                    "Available (Opportunistic)": "196,48 GB",
                     "Total": "255,87 GB",
                     "unit_of_measurement": "% available",
                     "icon": "mdi:database",
                     "friendly_name": "Catalin\u2019s iPhone Storage"
                 },
                 "last_changed": "2022-09-16T16:31:50.035693+00:00",
-                "last_updated": "2022-09-16T16:31:50.035693+00:00",
+                "last_updated": "2022-09-16T16:46:09.696759+00:00",
                 "context": {
-                    "id": "01GD3J8R8KF1C6AM33JJZGZAV1",
+                    "id": "01GD3K2ZS03XB5M1HWJG7DW5W8",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -944,7 +944,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -963,7 +963,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -982,7 +982,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1008,7 +1008,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1033,12 +1033,12 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.catalins_iphone_geocoded_location",
-                "state": "Aleea Baia de Arie\u0219 4\n060805 Bucharest\nRomania",
+                "state": "Strada Baia de Arie\u0219 7\n060802 Bucharest\nRomania",
                 "attributes": {
                     "Administrative Area": "N/A",
                     "Areas Of Interest": "N/A",
@@ -1047,16 +1047,16 @@
                     "ISO Country Code": "RO",
                     "Locality": "Bucharest",
                     "Location": [
-                        44.4365234375,
-                        26.042911286248618
+                        44.43668566280903,
+                        26.044304589115747
                     ],
-                    "Name": "Aleea Baia de Arie\u0219 4",
+                    "Name": "Strada Baia de Arie\u0219 7",
                     "Ocean": "N/A",
-                    "Postal Code": "060805",
+                    "Postal Code": "060802",
                     "Sub Administrative Area": "N/A",
                     "Sub Locality": "Sector 6",
-                    "Sub Thoroughfare": "4",
-                    "Thoroughfare": "Aleea Baia de Arie\u0219",
+                    "Sub Thoroughfare": "7",
+                    "Thoroughfare": "Strada Baia de Arie\u0219",
                     "Time Zone": "Europe/Bucharest",
                     "Zones": [
                         "Home"
@@ -1064,16 +1064,16 @@
                     "icon": "mdi:map",
                     "friendly_name": "Catalin\u2019s iPhone Geocoded Location"
                 },
-                "last_changed": "2022-09-16T15:11:40.604983+00:00",
-                "last_updated": "2022-09-16T15:11:40.604983+00:00",
+                "last_changed": "2022-09-16T16:46:09.697415+00:00",
+                "last_updated": "2022-09-16T16:46:09.697415+00:00",
                 "context": {
-                    "id": "01GD3DNZHWDEFXYNF27PS2CYZ7",
+                    "id": "01GD3K2ZS10X6Z68AB2BF3NEYJ",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1083,16 +1083,16 @@
                     "icon": "mdi:cellphone-wireless",
                     "friendly_name": "Catalin\u2019s iPhone Last Update Trigger"
                 },
-                "last_changed": "2022-09-16T16:12:23.621978+00:00",
-                "last_updated": "2022-09-16T16:12:23.621978+00:00",
+                "last_changed": "2022-09-16T16:46:51.089747+00:00",
+                "last_updated": "2022-09-16T16:46:51.089747+00:00",
                 "context": {
-                    "id": "01GD3H5565CAD44BQKZTHNFERY",
+                    "id": "01GD3K486H3JBC4BXMG7GKJBY0",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1118,7 +1118,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1137,7 +1137,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1145,26 +1145,24 @@
                 "state": "not_home",
                 "attributes": {
                     "source_type": "gps",
-                    "battery_level": 53,
-                    "latitude": 44.4365234375,
-                    "longitude": 26.042911286248618,
-                    "gps_accuracy": 14.2690480284468,
-                    "altitude": 95.04866493493319,
-                    "course": 90.8707494862552,
-                    "speed": 0.8045609212711474,
-                    "vertical_accuracy": 10.0406723707617,
+                    "battery_level": 64,
+                    "latitude": 44.43668566280903,
+                    "longitude": 26.044304589115747,
+                    "gps_accuracy": 35,
+                    "altitude": 91.68674087524414,
+                    "vertical_accuracy": 14.52786636352539,
                     "friendly_name": "iPhone"
                 },
-                "last_changed": "2022-09-16T15:11:40.478256+00:00",
-                "last_updated": "2022-09-16T15:11:40.478256+00:00",
+                "last_changed": "2022-09-16T16:46:09.247587+00:00",
+                "last_updated": "2022-09-16T16:46:09.247587+00:00",
                 "context": {
-                    "id": "01GD3DNZDY1J5M9NP2B8JAFF9B",
+                    "id": "01GD3K2ZAZ5E6RPY8N0QZ20NKV",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1183,7 +1181,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1202,7 +1200,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1221,7 +1219,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1240,7 +1238,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1259,7 +1257,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1278,7 +1276,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1297,7 +1295,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1316,7 +1314,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1335,7 +1333,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1354,7 +1352,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1373,7 +1371,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1396,7 +1394,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1419,7 +1417,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1441,49 +1439,49 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_living_room_temperature",
-                "state": "25.9",
+                "state": "25.8",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "\u00b0C",
                     "device_class": "temperature",
                     "friendly_name": "Temp Living Room temperature"
                 },
-                "last_changed": "2022-09-16T16:33:14.098836+00:00",
-                "last_updated": "2022-09-16T16:33:14.098836+00:00",
+                "last_changed": "2022-09-16T16:48:14.406492+00:00",
+                "last_updated": "2022-09-16T16:48:14.406492+00:00",
                 "context": {
-                    "id": "01GD3JBABJH8GPZ48WTVZ0XY59",
+                    "id": "01GD3K6SJ64024JQEBFBNTSRFQ",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_living_room_humidity",
-                "state": "53.3",
+                "state": "53.6",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "%",
                     "device_class": "humidity",
                     "friendly_name": "Temp Living Room humidity"
                 },
-                "last_changed": "2022-09-16T16:07:23.902224+00:00",
-                "last_updated": "2022-09-16T16:07:23.902224+00:00",
+                "last_changed": "2022-09-16T16:37:24.590887+00:00",
+                "last_updated": "2022-09-16T16:37:24.590887+00:00",
                 "context": {
-                    "id": "01GD3GW0FY5Y5FPQBN23J46B5W",
+                    "id": "01GD3JJYZEYXR4QHFEQT7V88QN",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1505,7 +1503,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1526,28 +1524,28 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_office_humidity",
-                "state": "51.7",
+                "state": "52.0",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "%",
                     "device_class": "humidity",
                     "friendly_name": "Temp Office humidity"
                 },
-                "last_changed": "2022-09-16T16:32:36.335668+00:00",
-                "last_updated": "2022-09-16T16:32:36.335668+00:00",
+                "last_changed": "2022-09-16T16:47:36.485143+00:00",
+                "last_updated": "2022-09-16T16:47:36.485143+00:00",
                 "context": {
-                    "id": "01GD3JA5FFGV0KGZPFBY22P6ET",
+                    "id": "01GD3K5MH5XM3CGMJM7MH7RFVZ",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1569,7 +1567,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1590,28 +1588,28 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_bedroom_humidity",
-                "state": "52.9",
+                "state": "53.0",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "%",
                     "device_class": "humidity",
                     "friendly_name": "Temp Bedroom humidity"
                 },
-                "last_changed": "2022-09-16T16:30:17.038549+00:00",
-                "last_updated": "2022-09-16T16:30:17.038549+00:00",
+                "last_changed": "2022-09-16T16:45:17.164336+00:00",
+                "last_updated": "2022-09-16T16:45:17.164336+00:00",
                 "context": {
-                    "id": "01GD3J5XEEG949MZ5Q73H5PJR5",
+                    "id": "01GD3K1CFCRHZHXYD5SPBJ95RS",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1633,7 +1631,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1654,7 +1652,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1675,7 +1673,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1697,28 +1695,28 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_play_room_temperature",
-                "state": "25.3",
+                "state": "25.2",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "\u00b0C",
                     "device_class": "temperature",
                     "friendly_name": "Temp Play Room temperature"
                 },
-                "last_changed": "2022-09-16T16:17:56.730031+00:00",
-                "last_updated": "2022-09-16T16:17:56.730031+00:00",
+                "last_changed": "2022-09-16T16:47:57.463033+00:00",
+                "last_updated": "2022-09-16T16:47:57.463033+00:00",
                 "context": {
-                    "id": "01GD3HFAFTP6QJXJ37SMYT2PQD",
+                    "id": "01GD3K690QPZZFVDG4CAQY8GEF",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1739,7 +1737,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1761,49 +1759,49 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_small_bedroom_temperature",
-                "state": "26.1",
+                "state": "26.0",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "\u00b0C",
                     "device_class": "temperature",
                     "friendly_name": "Temp Small Bedroom temperature"
                 },
-                "last_changed": "2022-09-16T16:03:55.063621+00:00",
-                "last_updated": "2022-09-16T16:03:55.063621+00:00",
+                "last_changed": "2022-09-16T16:33:55.824251+00:00",
+                "last_updated": "2022-09-16T16:33:55.824251+00:00",
                 "context": {
-                    "id": "01GD3GNMHQR1GGMZPG0A8W3KY3",
+                    "id": "01GD3JCK3G8DJ3PRNCV6M1K9XG",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_small_bedroom_humidity",
-                "state": "49.1",
+                "state": "50.3",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "%",
                     "device_class": "humidity",
                     "friendly_name": "Temp Small Bedroom humidity"
                 },
-                "last_changed": "2022-09-16T16:25:44.683271+00:00",
-                "last_updated": "2022-09-16T16:25:44.683271+00:00",
+                "last_changed": "2022-09-16T16:36:13.656896+00:00",
+                "last_updated": "2022-09-16T16:36:13.656896+00:00",
                 "context": {
-                    "id": "01GD3HXKFBY36ZRXVG9K5PXKE5",
+                    "id": "01GD3JGSPRYM46B7GWXR8XJXVG",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1824,7 +1822,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1846,49 +1844,49 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_garden_temperature",
-                "state": "26.2",
+                "state": "25.9",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "\u00b0C",
                     "device_class": "temperature",
                     "friendly_name": "Temp Garden temperature"
                 },
-                "last_changed": "2022-09-16T16:27:06.568825+00:00",
-                "last_updated": "2022-09-16T16:27:06.568825+00:00",
+                "last_changed": "2022-09-16T16:42:06.940199+00:00",
+                "last_updated": "2022-09-16T16:42:06.940199+00:00",
                 "context": {
-                    "id": "01GD3J03E845V7J80HT5X0QX25",
+                    "id": "01GD3JVJPWGYG129T80BJ578C6",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
                 "entity_id": "sensor.temp_garden_humidity",
-                "state": "52.6",
+                "state": "54.4",
                 "attributes": {
                     "state_class": "measurement",
                     "unit_of_measurement": "%",
                     "device_class": "humidity",
                     "friendly_name": "Temp Garden humidity"
                 },
-                "last_changed": "2022-09-16T16:20:43.966597+00:00",
-                "last_updated": "2022-09-16T16:20:43.966597+00:00",
+                "last_changed": "2022-09-16T16:45:53.262336+00:00",
+                "last_updated": "2022-09-16T16:45:53.262336+00:00",
                 "context": {
-                    "id": "01GD3HMDSY84DFYD64EDJ8QZB0",
+                    "id": "01GD3K2FQETZQC2YGZ9G7GRA5K",
                     "parent_id": null,
                     "user_id": null
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         },
         {
             "state": {
@@ -1916,7 +1914,7 @@
                 }
             },
             "extra_data": null,
-            "last_seen": "2022-09-16T16:33:46.119728+00:00"
+            "last_seen": "2022-09-16T16:48:46.120551+00:00"
         }
     ]
 }
